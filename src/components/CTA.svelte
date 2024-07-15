@@ -5,7 +5,7 @@ import Button from "../components/ButtonCTA.svelte";
 
 <section class="CTA">
         <h1>Visez le meilleur, choisissez l'expérience</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quis veritatis? Aperiam repellendus accusamus maiores reprehenderit aut? Veniam sunt voluptatem quibusdam nam voluptatum ab consectetur, officia odit voluptatibus aut nesciunt?</p> -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quis veritatis? Aperiam repellendus accusamus maiores reprehenderit aut? Veniam sunt voluptatem quibusdam nam voluptatum ab consectetur, officia odit voluptatibus aut nesciunt?</p> 
  <Button/>
 </section>
 
@@ -17,7 +17,7 @@ import Button from "../components/ButtonCTA.svelte";
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-image: url(../assets/FabienMarceauD.jpg);
+        background-image: url("../assets/FabienMarceauD.jpg");
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
