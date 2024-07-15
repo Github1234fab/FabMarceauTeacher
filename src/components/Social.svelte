@@ -5,7 +5,7 @@
 <section class="social">
         <div class="wrapper-text">
                 <h1>Directeur, Formateur, enseignant</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum iste aspernatur neque, repudiandae tempore sapiente nam explicabo adipisci aliquid cupiditate delectus aliquam error suscipit velit eveniet possimus ullam dolores ipsam?</p>
+                <p>Ma passion pour la musique et la pédagogie m'a conduit en 2009 à créer l'école de guitare de Lyon, grâce au soutien du maire de Lyon 6, à l'époque J.J David. <br> Ensuite j'ai créé l'école de piano de Lyon, puis l'école de Chant de Lyon et finalement, j'ai regroupé ces trois écoles sous le nom "École de musique issétys".  Aujourd'hui l'école de musique Issétys enseigne la guitare, le piano, la basse, le chant, le ukulélé et la batterie.  </p>
         </div>
         <div class="wrapper-media">
                 <div class="wrapper-video wrapper-position-A">
@@ -14,12 +14,12 @@
                                 <iframe class="iframe" title="interview Issetys ecole de musique" src="https://www.youtube.com/embed/yH6rYXOxqQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
                         </div>
 
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam vel corrupti consequuntur dignissimos quasi architecto fugiat dolor? Corrupti esse, praesentium tenetur consequuntur, in voluptas qui et iusto officiis incidunt expedita!</p>
+                        <p>Ma mère était institutrice et m'a donné cette passion pour la pédagogie. C'est un bonheur de former chaque jour des musiciens. Ils témoignent ici, lors d'un reportage tourné à l'école de musique Issétys. </p>
                 </div>
                 <div class="wrapper-img wrapper-position-B">
                         <h2>Les élèves de <span>Fabien</span></h2>
                         <img src={Concert} alt="" class="concert" />
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam vel corrupti consequuntur dignissimos quasi architecto fugiat dolor? Corrupti esse, praesentium tenetur consequuntur, in voluptas qui et iusto officiis incidunt expedita!</p>
+                        <p>Accompagner les élèves jusque sur scène, c'est le rêve!</p>
                 </div>
         </div>
 </section>

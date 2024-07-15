@@ -5,16 +5,16 @@
         import Balance from "../assets/scale-balanced-solid.svg";
 
         const tabServices = [
-                { icon: Contract, title: "Fiabilité", paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorem dolores esse adipisci reprehenderit " },
+                { icon: Contract, title: "Fiabilité", paragraph: "Signez le contrat qui définit le cadre des cours  à domicile et vous protègera entre autre de l'annulation intempestive. Réservez votre cours, procéder au paiement et 'let's go for learn! '" },
                 {
                         icon: Balance,
                         title: "Avance de crédit d'impôt",
-                        paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorem dolores esse adipisci reprehenderit ",
+                        paragraph: "Avec le service à la personne, vous bénéficiez d'une réduction d'impôt de 50% sur le montant des cours. Vous avancez 119 euros, mais vous n'en payerez au final que la moitiée, c'est à dire 59,50 euros!!",
                 },
                 {
                         icon: Money,
                         title: "Tarifs compétitifs",
-                        paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorem dolores esse adipisci reprehenderit ",
+                        paragraph: "Un cours d'une heure à domicile pour 59,50 euros, c'est un tarif unique et compétitif. Vous ne trouverez pas moins cher pour un cours donné par un professionnel, à domicile !",
                 },
         ];
 </script>
@@ -22,10 +22,10 @@
 <section class="service" id="Services">
         <div class="wrapper-text">
                 <h1><span>Tarifs</span> et avantages</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit vel natus minus fuga cupiditate dolore provident inventore nesciunt consequuntur atque quidem laboriosam quaerat asperiores minima dicta nemo, modi id!</p>
+                <p>Un prix unique de 119 euros, et vous n'en payez que la moitiée!</p>
                 <div class="tarif">
                         <h1>Tarif Unique</h1>
-                        <h2>99 euros/1 heure</h2>
+                        <h2> 59,5 euros/1 heure</h2>
                 </div>
         </div>
 
@@ -79,6 +79,9 @@
                 margin-top: 40px;
                 box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.254);
         }
+        .tarif h2{
+                color: var(--bgHero);
+        }
         .wrapper-frames-circles {
                 display: flex;
                 align-items: center;
@@ -90,7 +93,7 @@
         @media screen and (max-width: 768px) {
                 .service {
                         display: flex;
-                        height: 1700px;
+                        height: 1600px;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;

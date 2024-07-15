@@ -6,17 +6,17 @@
         let tab = [
                 {
                         title: "+ 17 000",
-                        paragraph: "Je compte plus de 17 000 heures de cours de Guitare à mon actif !",
+                        paragraph: "Plus de 17 000 heures de cours de Guitare données !",
                         icon: "icon",
                 },
                 {
-                        title: "6",
-                        paragraph: "J'ai 6 casquettes: Musicien, Professeur, Directeur d'école de musique et Formateur de professeurs de musique. Photographe et développeur Web!",
+                        title: "9",
+                        paragraph: "Maîtrise de 9 styles: Rock, Jazz, Blues, Funk, Finger-style, Pop, Bossa Nova, Metal,  Folk.",
                         icon: "icon",
                 },
                 {
                         title: "2",
-                        paragraph: "J'enseigne sur deux lieux: Lyon 6 et les monts du Lyonnais.",
+                        paragraph: "J'enseigne sur deux sites géographiques: Lyon 6 et les monts du Lyonnais.",
                         icon: "icon",
                 },
         ];
@@ -29,10 +29,10 @@
                         <h1>À propos</h1>
                         <p>
                                 J'ai lu un jour dans une revue pédgaogique, qu'enseigner consiste à éveiller les consiences à penser par elle même. Je crois que c'est exactement ce que je cherche à faire dès lors que je donne un cours de Guitare Je vise l'autonomie de l'élève. Expérimenter c'est comprendre et comprendre c'est apprendre. Lorsque l'on sait comment les choses fonctionnent alors,
-                                libre à nous de créer, de jouer et d'évoluer comme bon nous semble dans la matière que l'on apprend. <br />J'ai donné plus de 17 000 heures de cours de Guitare ! À l'école de musique Issétys, école que j'ai créé en 2009 et dans laquelle j'enseigne encore, je dis souvent aux professeurs avec qui je collabore: "regardez bien l'attitude de votre élève quand il arrive
-                                dans la salle et observez bien son attitude quand il repart". La musique appaise, la musique épanouit. Elle nous demande une grande concentration et elle requiert que notre esprit et notre corps soit à 100% connecté et relié. <br /> J'ai 52 ans aujorud'hui et j'enseigne depuis que j'ai 20 ans. J'ai été musicien professionnel, j'ai une licence de musicologie, j'aie
-                                une médaille d'or de guitare jazz et un DEM de musique actuelle. J'ai beauoucp joué et beaucoup étudié. Mais ça j'allais dire, c'est le minimum syndical ! <br /> Ce qui compte pour enseigner, c'est la passion d'une part, l'envie et le besoin de transmettre d'autre part et pour finir, avoir suffisamment d'empathie et de technique pédagogique pour s'adapter à chaque élève
-                                et lui permettre de grandir et d'évoluer dans sa pratique.
+                                libre à nous de créer, de jouer et d'évoluer comme bon nous semble dans la matière que l'on apprend. <br /><br>J'ai donné plus de 17 000 heures de cours de Guitare à l'école de musique Issétys installée à Lyon 6, école que j'ai créé en 2009. Je dis souvent aux professeurs avec qui je collabore: "regardez l'attitude de votre élève quand il arrive dans la salle et
+                                observez son attitude quand il repart". La musique appaise, la musique nous épanouit. Elle requiert une immense concentration car elle se fabrique avec notre esprit et notre corps, connectés, reliés ensemble à 100%. <br/><br>
+                                J'ai été musicien professionnel, j'ai une licence de musicologie, une médaille d'or de guitare jazz et un DEM de musique actuelle. J'ai beauoucp joué et beaucoup étudié. Mais ça j'allais dire, c'est le minimum syndical ! <br /><br> Ce qui compte pour enseigner, c'est la passion d'une part, l'envie et le besoin de transmettre d'autre part et pour finir, avoir suffisamment
+                                d'empathie et de technique pédagogique pour s'adapter à chaque élève, dans le but de lui permettre d'évoluer dans sa pratique, de devenir autonome.
                         </p>
                         <Button />
                 </div>
@@ -74,12 +74,13 @@
                 margin-bottom: 40px;
                 padding: 20px;
         }
-        .wrapper-text h1{
-                     font-size: 2rem;
+        .wrapper-text h1 {
+                font-size: 2rem;
         }
         .wrapper-text p {
                 line-height: 25px;
                 margin-bottom: 50px;
+                padding: 50px;
         }
         .wrapper-frames-circle {
                 grid-column: 1/3;
@@ -100,7 +101,7 @@
                         grid-column: 1;
                         grid-row: 1;
                         width: 250px;
-                        height:250px;
+                        height: 250px;
                         align-self: center;
                         margin-top: -20px;
                         /* border-radius: 50%; */
@@ -110,7 +111,14 @@
                         grid-column: 1;
                         grid-row: 2;
                         gap: 20px;
-                        margin-top:20px;
+                        margin-top: 20px;
+                }
+                .wrapper-text p {
+                        grid-column: 1;
+                        grid-row: 2;
+                        gap: 20px;
+                        margin-top: 20px;
+                        padding: 10px;
                 }
                 .wrapper-frames-circle {
                         grid-column: 1/3;

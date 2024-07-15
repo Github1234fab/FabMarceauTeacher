@@ -15,7 +15,7 @@
                 gap: 10px;
                 box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.711);
                 padding: 10px;
-                border: 3px solid rgb(223, 198, 198);
+                border: 1px solid rgb(223, 198, 198);
                 border-radius: 8px;
                 max-width: 200px;
                 min-width: 170px;

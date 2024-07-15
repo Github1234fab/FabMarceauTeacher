@@ -25,8 +25,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 70px;
-                height: 70px;
+                width: 80px;
+                height: 80px;
                 border-radius: 50%;
                 border: 1px solid var(--CTA);
                 /* position: relative; */
@@ -46,5 +46,6 @@
                 text-align: center;
                 font-size: 1rem;
                 font-weight: 400;
+                line-height: 25px;
         }
 </style>

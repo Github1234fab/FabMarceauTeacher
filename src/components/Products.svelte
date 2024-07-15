@@ -45,8 +45,8 @@
 </script>
 
 <section class="products" id="Products">
-        <h1>Compétences</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorem dolores esse adipisci reprehenderit deleniti quod harum eius. Illum culpa unde, tenetur ea doloribus architecto natus. Iste fugiat odio nobis?</p>
+        <h1>Apprendre en jouant</h1>
+        <p>La meilleure manière d'apprendre la guitare ou de se perfectionner, c'est de jouer! Jouer et partager pour comprendre, jouer pour se tromper, jouer pour apprendre et progresser.</p>
         <div class="wrapper-competence-value">
                 <div class="wrapper-values">
                         <i class="fa-solid fa-graduation-cap fa-2xl"></i>
