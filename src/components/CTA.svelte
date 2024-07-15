@@ -17,7 +17,7 @@ import Button from "../components/ButtonCTA.svelte";
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-image: url("../assets/FabienMarceauD.jpg");
+        background-image: url("../assets/FabienMarceauB.jpg");
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
