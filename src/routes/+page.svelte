@@ -1,2 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+        import Hero from "../components/Hero.svelte";
+        import About from "../components/About.svelte";
+        import Products from "../components/Products.svelte";
+        import Service from "../components/Service.svelte";
+        import Social from "../components/Social.svelte";
+        import CTA from "../components/CTA.svelte";
+        import Formulaire from "../components/Formulaire.svelte";
+</script>
+
+<Hero />
+<Products />
+<About />
+<Service /> 
+<CTA />
+<Social /> 
+
+<Formulaire />
+<style>
+</style>

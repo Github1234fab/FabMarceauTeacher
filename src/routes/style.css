@@ -1,0 +1,22 @@
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+body,
+html {
+        font-size: 16px;
+        font-family: Raleway;
+        scroll-behavior: smooth;
+
+}
+
+:root {
+        --bgHeader: #14282c;
+        --CTA: #c5a527;
+        --white: rgb(235, 235, 235);
+        --Raleway: "Raleway", sans-serif;
+        --bgSectionA: #f2f2f2;
+        --bgSectionB: #7d7070;
+        --bgSectionC: #49494c;
+}
