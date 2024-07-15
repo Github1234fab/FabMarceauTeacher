@@ -6,7 +6,7 @@
         let tab = [
                 {
                         title: "+ 17 000",
-                        paragraph: "J'ai plus de 17 000 heures de cours de Guitare à mon actif !",
+                        paragraph: "Je compte plus de 17 000 heures de cours de Guitare à mon actif !",
                         icon: "icon",
                 },
                 {
