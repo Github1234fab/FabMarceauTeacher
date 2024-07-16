@@ -21,11 +21,11 @@
 
 <section class="service" id="Services">
         <div class="wrapper-text">
-                <h1><span>Tarifs</span> et avantages</h1>
+                <h1 class="title"><span>Tarifs</span> et avantages</h1>
                 <p>Un prix unique de 119 euros, et vous n'en payez que la moitiée!</p>
                 <div class="tarif">
                         <h1>Tarif Unique</h1>
-                        <h2> 59,5 euros/1 heure</h2>
+                        <h2> 59.5 euros/1 heure</h2>
                 </div>
         </div>
 
@@ -39,11 +39,11 @@
 <style>
         .service {
                 display: flex;
-                height: 100vh;
+                height: calc(100vh + 100px);
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                gap: 30px;
+                gap: 100px;
                 padding: 50px;
                 background-color: var(--bgSectionA);
         }
@@ -93,7 +93,7 @@
         @media screen and (max-width: 768px) {
                 .service {
                         display: flex;
-                        height: 1600px;
+                        height: 1700px;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
@@ -111,6 +111,9 @@
                         align-items: center;
                         justify-content: center;
                         gap: 70px;
+                }
+                .title{
+                        margin-top: 50px
                 }
         }
 </style>

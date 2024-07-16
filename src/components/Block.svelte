@@ -1,12 +1,14 @@
 <script>
         export let title;
         export let paragraph;
+        import Button from "../components/ButtonCTA.svelte";
 </script>
 
 <div class="block">
         <div class="wrapper-text">
                 <h1>{title}</h1>
                 <p>{paragraph}</p>
+                       <Button />
         </div>
 </div>
 
@@ -22,7 +24,7 @@
                 box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.142);
                 border-radius: 8px;
                 max-width: 300px;
-                min-height: 300px;
+                min-height: 350px;
         }
         .wrapper-text {
                 display: flex;

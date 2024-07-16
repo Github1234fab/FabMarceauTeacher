@@ -34,7 +34,6 @@
                                 J'ai été musicien professionnel, j'ai une licence de musicologie, une médaille d'or de guitare jazz et un DEM de musique actuelle. J'ai beauoucp joué et beaucoup étudié. Mais ça j'allais dire, c'est le minimum syndical ! <br /><br> Ce qui compte pour enseigner, c'est la passion d'une part, l'envie et le besoin de transmettre d'autre part et pour finir, avoir suffisamment
                                 d'empathie et de technique pédagogique pour s'adapter à chaque élève, dans le but de lui permettre d'évoluer dans sa pratique, de devenir autonome.
                         </p>
-                        <Button />
                 </div>
         </div>
         <div class="wrapper-frames-circle">
@@ -71,7 +70,6 @@
                 justify-self: center;
                 gap: 20px;
                 margin-top: 50px;
-                margin-bottom: 40px;
                 padding: 20px;
         }
         .wrapper-text h1 {

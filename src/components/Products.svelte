@@ -82,7 +82,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                height: auto;
+                height: calc(100vh + 300px);
                 gap: 80px;
                 padding: 100px;
                 background: radial-gradient(rgb(109, 109, 212), rgb(10, 10, 105));
@@ -101,6 +101,9 @@
                 text-align: center;
                 margin-top: -30px;
         }
+            .wrapper-cardA{
+                  margin-top: 30px;
+            }
         .wrapper-cardA,
         .wrapper-cardB {
                 display: flex;
@@ -109,6 +112,7 @@
                 gap: 30px;
                 flex-wrap: wrap;
                 width: 100%;
+         
         }
         .wrapper-competence-value {
                 display: flex;
@@ -147,6 +151,7 @@
         @media screen and (max-width: 800px) {
                 .products {
                         padding: 50px;
+                        height: 3000px;
                 }
                 .wrapper-competence-value {
                         display: flex;

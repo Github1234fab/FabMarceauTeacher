@@ -14,9 +14,10 @@
         </div>
 
         <div class="menu">
-                <a href="#About">Profil</a>
+ 
                 <a href="#Products">Cours</a>
-                <a href="#Services">Conditions</a>
+                <a href="#Services">Tarifs</a>
+                               <a href="#About">Profil</a>
                 <a href="#section-form">Contact</a>
         </div>
 </header>
