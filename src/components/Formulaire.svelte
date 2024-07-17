@@ -2,7 +2,7 @@
 </script>
 
 <section class="section-form" id="Contact">
-        
+
         <!-- +++++++++++++++++Text+++++++++++++++++ -->
         <div class="wrapper-text">
                 <h1 class="form-title">Formulaire de <span>contact</span></h1>
@@ -16,9 +16,9 @@
         </div>
 
         <!-- +++++++++++++++++Formulaire+++++++++++++++++ -->
-        <form name="contact-cours" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="form">
+        <form name="contact-cours" method="POST"data-netlify="true" class="form">
                 <input type="hidden" name="form-name" value="contact-cours" />
-                <input type="hidden" name="bot-field" />
+            
 
                 <!-- +++++++++++++++++Inputs en wrapper pour disposition+++++++++++++++++ -->
                 <div class="wrapper-inputs">
