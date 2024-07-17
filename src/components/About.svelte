@@ -50,6 +50,7 @@
                 grid-template-columns: 1fr;
                 grid-template-rows: auto;
                 padding: 20px;
+                z-index: 0;
         }
         .img {
                 grid-column: 1/2;
@@ -61,6 +62,7 @@
                 margin-top: 20px;
                 border-radius: 50%;
                 transform: rotate(2deg);
+                z-index: 0;
         }
         .wrapper-text {
                 grid-column: 1;
@@ -114,10 +116,10 @@
                         margin-top: 20px;
                 }
                 .wrapper-text p {
-                        grid-column: 1;
+                        grid-column: 1/3;
                         grid-row: 2;
                         gap: 20px;
-                        margin-top: 20px;
+                        margin-top: 20px ;
                         padding: 10px;
                 }
                 .wrapper-frames-circle {

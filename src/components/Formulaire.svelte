@@ -119,7 +119,7 @@
         .demande::placeholder {
                 color: var(--bgHero);
                 font-size: 0.7em;
-                font-size: var(--m);
+                font-size: 0.9rem;
         }
 
         .button {
@@ -196,7 +196,7 @@
                         align-items: center;
                 }
                 .demande {
-                        width: 90%;
+                        width: 100%;
                         margin: 0 auto;
                 }
         }

@@ -51,5 +51,8 @@
                 .wrapper {
                         border-radius: 20px;
                 }
+                .CTA{
+                                 height: calc(100vh + 300px);
+                }
         }
 </style>

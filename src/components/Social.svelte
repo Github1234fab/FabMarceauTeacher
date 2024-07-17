@@ -17,9 +17,9 @@
                         <p>Ma mère était institutrice et m'a donné cette passion pour la pédagogie. C'est un bonheur de former chaque jour des musiciens, depuis 17 ans. Ils témoignent ici, lors d'un reportage tourné à l'école de musique Issétys. </p>
                 </div>
                 <div class="wrapper-img wrapper-position-B">
-                        <h2>Les <span>Concerts</span></h2>
+                        <h2>Les <span>Concerts </span>ISSETYS</h2>
                         <img src={Concert} alt="" class="concert" />
-                        <p>L'aboutissement! La scène, le public, les lumière...ça fait un peu peur mais c'est tellement galvanisant !</p>
+                        <p>L'aboutissement! La scène, le public, les lumièreS...ça fait un peu peur mais c'est tellement galvanisant !</p>
                 </div>
         </div>
 </section>

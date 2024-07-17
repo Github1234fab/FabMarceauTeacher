@@ -6,7 +6,7 @@
 
 <footer>
         <img src={Guitar} alt="logo" class="img" />
-        <h3>Tous droits réservés {date}</h3>
+        <h3>Tous droits réservés fabien Marceau {date}</h3>
 </footer>
 
 <style>
@@ -17,7 +17,7 @@
                 justify-content: center;
                 background-color: #49494c;
                 color: white;
-                height: 300px;
+                height: 200px;
         }
         footer h3 {
                 font-size: 1rem;

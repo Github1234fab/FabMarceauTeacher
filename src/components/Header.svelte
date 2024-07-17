@@ -1,12 +1,36 @@
 <script>
+        import { onMount, onDestroy } from "svelte";
         import StratoOne from "../assets/stratocastorOne.png";
-   
+        let header;
+          let scrollTimeout;
+
+      function handleScroll() {
+    header.classList.add('sticky');
+
+    // Réinitialise et définit le timeout à chaque événement de scroll
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      // Retire la classe sticky quand le scroll s'arrête
+      header.classList.remove('sticky');
+    }, 100); // 100 millisecondes d'attente pour considérer que le scroll est arrêté
+  }
+    onMount(() => {
+    window.addEventListener('scroll', handleScroll);
+  });
+    onDestroy(() => {
+    window.removeEventListener('scroll', handleScroll);
+  });
 </script>
 
-<header>
+<!-- <script>
+import StratoOne from "../assets/stratocastorOne.png";
+</script> -->
+
+<header bind:this={header}>
         <div class="container-strat">
                 <img class="strato" src={StratoOne} alt="Guitare" />
         </div>
+        <div class="sticky hidden"></div>
 
         <div class="menu">
                 <a href="#cours_de_guitare">Cours</a>
@@ -24,6 +48,17 @@
                 height: 80px;
                 background-color: var(--bgHeader);
                 padding: 20px;
+                position: fixed;
+                width: 100vw;
+                z-index: 3;
+                 transition: opacity 1s ease-in-out;
+        }
+        .sticky {
+                opacity: 0;
+                transition: 0.3s ease-in-out;
+        }
+        .hidden {
+                display: none;
         }
         .strato {
                 margin-left: -30px;

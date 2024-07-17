@@ -8,11 +8,11 @@ html {
         font-size: 16px;
         font-family: Raleway;
         scroll-behavior: smooth;
-
 }
 
 :root {
         --bgHeader: #14282c;
+
         --CTA: #c5a527;
         --white: rgb(235, 235, 235);
         --Raleway: "Raleway", sans-serif;

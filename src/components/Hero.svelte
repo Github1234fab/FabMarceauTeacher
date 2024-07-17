@@ -27,7 +27,7 @@
                 /* padding: 50px; */
         }
         .wrapper-text {
-                z-index: 1;
+         
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
