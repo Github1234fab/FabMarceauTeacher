@@ -1,4 +1,11 @@
-<button>Contact</button>
+
+
+
+
+
+
+
+   <a href="#Contact"><button>Contact</button></a>
 
 <style>
         button {
@@ -24,6 +31,10 @@
         }
         button:active {
                 border: 4px white solid;
+        }
+             a {
+                text-decoration: none;
+                color: white;
         }
   
 </style>

@@ -7,7 +7,7 @@
                 <h1>Cours de <span>Guitare</span></h1>
                 <h2>Apprenez la guitare avec un professeur de guitare passionné !</h2>
                 <p>Vous souhaitez apprendre la guitare ou vous perfectionner tout en restant chez vous, dans votre confort? <br /> Ne bougez surtout pas...j'arrive!</p>
-                <a href="#section-form"><div class="button"><Button /></div></a>
+             <div class="button"><Button /></div>
         </div>
 </section>
 
@@ -64,10 +64,7 @@
                 z-index: 0;
                 margin-top: 25px;
         }
-        a {
-                text-decoration: none;
-                color: white;
-        }
+   
 
         @media screen and (max-width: 550px) {
                 .hero {
