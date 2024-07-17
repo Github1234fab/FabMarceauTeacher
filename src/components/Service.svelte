@@ -118,5 +118,16 @@
                 .title{
                         margin-top: 50px
                 }
+                .tarif h1{
+                        font-size: 1.5rem;
+
+                }
+                   .tarif h2{
+                        font-size: 1rem;
+                        
+                }
+                .tarif{
+                        min-width: 200px;
+                }
         }
 </style>

@@ -57,7 +57,7 @@
                 justify-content: center;
                 gap: 20px;
                 width: 60%;
-                margin-top: 30px;
+                margin-top: 5cqb;
         }
         .social h1 {
                 font-size: 2rem;

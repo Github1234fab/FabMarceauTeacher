@@ -68,7 +68,7 @@
 
         @media screen and (max-width: 550px) {
                 .hero {
-                        height: calc(100vh - 200px);
+                        height: calc(100vh  +  20px);
                         align-items: center;
                         justify-content: center;
                         padding: 30px;
