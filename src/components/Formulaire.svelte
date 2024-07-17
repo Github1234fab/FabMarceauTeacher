@@ -16,7 +16,7 @@
 
 
 <section class="section-form" id="Contact">
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST"  netlify-honeypot="bot-field" netlify>
                 <input type="hidden" name="form-name" value="contact" />
 
                 <!-- +++++++++++++++++Inputs en wrapper pour disposition+++++++++++++++++ -->
