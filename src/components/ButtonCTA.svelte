@@ -12,7 +12,7 @@
                 font-family: "inter";
                 background-image: linear-gradient(to left, var(--CTA) 5%, rgb(233, 188, 106));
                 color: white;
-                font-size: 1.1rem;
+                font-size: 1rem;
                 font-weight: 600;
                 letter-spacing: -0.2px;
                 max-width: 120px;
