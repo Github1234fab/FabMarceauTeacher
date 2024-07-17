@@ -15,7 +15,7 @@
 
 
 
-<section class="section-form" id="section-form">
+<section class="section-form" id="Contact">
         <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/confirmation-inscription.html">
                 <input type="hidden" name="form-name" value="contact" />
 

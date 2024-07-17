@@ -12,7 +12,7 @@
                 <a href="#cours_de_guitare">Cours</a>
                 <a href="#Tarifs">Tarifs</a>
                 <a href="#A_propos">Profil</a>
-                <a href="#section-form">Contact</a>
+                <a href="#Contact">Contact</a>
         </div>
 </header>
 
