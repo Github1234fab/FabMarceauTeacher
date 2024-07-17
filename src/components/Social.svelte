@@ -13,13 +13,12 @@
                         <div class="iframe-container">
                                 <iframe class="iframe" title="interview Issetys ecole de musique" src="https://www.youtube.com/embed/yH6rYXOxqQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
                         </div>
-
                         <p>Ma mère était institutrice et m'a donné cette passion pour la pédagogie. C'est un bonheur de former chaque jour des musiciens, depuis 17 ans. Ils témoignent ici, lors d'un reportage tourné à l'école de musique Issétys. </p>
                 </div>
                 <div class="wrapper-img wrapper-position-B">
                         <h2>Les <span>Concerts </span>ISSETYS</h2>
                         <img src={Concert} alt="" class="concert" />
-                        <p>L'aboutissement! La scène, le public, les lumièreS...ça fait un peu peur mais c'est tellement galvanisant !</p>
+                        <p>L'aboutissement! La scène, le public, les lumières...ça fait un peu peur mais c'est tellement galvanisant !</p>
                 </div>
         </div>
 </section>
@@ -93,8 +92,8 @@
         .wrapper-img {
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
-                justify-content: flex-start;
+                align-items: left;
+                justify-content: left;
                 gap: 20px;
         }
         .wrapper-video p,
@@ -104,6 +103,8 @@
                 line-height: 25px;
                 color: white;
                 width: 90%;
+                text-align: left;
+           
         }
         .wrapper-position-A {
                 grid-column: 1;
@@ -112,6 +113,7 @@
         .wrapper-position-B {
                 grid-column: 2;
                 grid-row: 2;
+                margin-bottom: 50px;
         }
 
         @media screen and (max-width: 1200px) {
@@ -165,8 +167,8 @@
                 .wrapper-img {
                         display: flex;
                         flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
+                        align-items: flex-start;
+                        justify-content: flex-start;
                         gap: 20px;
                 }
                 .wrapper-video p,
@@ -176,7 +178,7 @@
                         line-height: 25px;
                         color: white;
                         width: 80%;
-                        text-align: center;
+                        text-align: left;
                 }
                 .social {
                         padding: 20px;

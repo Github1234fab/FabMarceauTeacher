@@ -25,7 +25,7 @@
                 <p>Un prix unique de 119 euros, et vous n'en payez que la moitiée!</p>
                 <div class="tarif">
                         <h1>Tarif Unique</h1>
-                        <h2> 59.5 euros/1 heure</h2>
+                        <h2> 59 €/1 heure</h2>
                 </div>
         </div>
 
@@ -39,7 +39,7 @@
 <style>
         .service {
                 display: flex;
-                height: calc(100vh + 100px);
+                height: calc(100vh + 400px);
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
@@ -123,7 +123,7 @@
 
                 }
                    .tarif h2{
-                        font-size: 1rem;
+                        font-size: 1.2rem;
                         
                 }
                 .tarif{

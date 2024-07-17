@@ -52,7 +52,7 @@
                         border-radius: 20px;
                 }
                 .CTA{
-                                 height: calc(100vh + 300px);
+                                 height: calc(100vh + 650px);
                 }
         }
 </style>

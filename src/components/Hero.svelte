@@ -20,7 +20,7 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
-                height: calc(100vh + 50px);
+                height: calc(100vh + 200px);
                 align-items: center;
                 justify-content: center;
                 padding: 50px;
@@ -68,7 +68,7 @@
 
         @media screen and (max-width: 550px) {
                 .hero {
-                        height: calc(100vh  +  20px);
+                        height: calc(100vh  +  100px);
                         align-items: center;
                         justify-content: center;
                         padding: 30px;

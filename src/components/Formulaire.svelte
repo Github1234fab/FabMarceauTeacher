@@ -1,41 +1,52 @@
 <!-- +++++++++++++++++Text+++++++++++++++++ -->
-<div class="wrapper-text">
-        <h1 class="form-title">Formulaire de <span>contact</span></h1>
-        <!-- <h2 class="form-contactez">Contactez-moi dès aujourdhui!</h2> -->
-</div>
-
-<!-- +++++++++++++++++Coordonnées+++++++++++++++++ -->
-<div class="coordonnees">
-        <a href="mailto:fabien.marceau@gmail.com " class="contact-form"> <i class="fa-regular fa-envelope icon-coordonnees"></i> fabien.marceau@gmail.com</a>
-        <a href="tel:0660376567" class="contact-form"><i class="fa-solid fa-phone-volume icon-coordonnees"></i> 0660 376 567</a>
-</div>
-
-<!-- +++++++++++++++++Formulaire+++++++++++++++++ -->
-
-<section class="section-form" id="Contact">
-        <form name="contact" method="POST" netlify-honeypot="bot-field" netlify>
-                <input type="hidden" name="form-name" value="contact" />
-
-                <!-- +++++++++++++++++Inputs en wrapper pour disposition+++++++++++++++++ -->
-                <div class="wrapper-inputs">
-                        <input name="nom" type="text" id="nom" required placeholder="Nom" />
-                        <input name="prenom" type="text" id="prenom" required placeholder="Prénom" />
+<div class="formulaire">
+        <div class="wrapper-text">
+                <h1 class="form-title">Formulaire de <span>contact</span></h1>
+                <!-- <h2 class="form-contactez">Contactez-moi dès aujourdhui!</h2> -->
+                <div class="coordonnees">
+                        <a href="mailto:fabien.marceau@gmail.com " class="contact-form"> <i class="fa-regular fa-envelope icon-coordonnees"></i> fabien.marceau@gmail.com</a>
+                        <a href="tel:0660376567" class="contact-form"><i class="fa-solid fa-phone-volume icon-coordonnees"></i> 0660 376 567</a>
                 </div>
+        </div>
 
-                <!-- +++++++++++++++++Inputs en wrapper pour disposition+++++++++++++++++ -->
-                <div class="wrapper-inputs">
-                        <input name="email" type="email" id="email" required placeholder="Adresse mail" />
-                        <input name="telephone" type="tel" id="telephone" required placeholder="Téléphone" />
-                </div>
+        <!-- +++++++++++++++++Coordonnées+++++++++++++++++ -->
 
-                <!-- +++++++++++++++++Champ demande+++++++++++++++++ -->
-                <textarea name="demande" id="demande" class="demande" placeholder="Votre demande"></textarea>
-                <!-- +++++++++++++++++Button submit+++++++++++++++++ -->
-                <input class="button" type="submit" value="Envoyez" />
-        </form>
-</section>
+        <!-- +++++++++++++++++Formulaire+++++++++++++++++ -->
+
+        <section class="section-form" id="Contact">
+                <form name="contact" method="POST" netlify-honeypot="bot-field" class="wrapper-form" netlify>
+                        <input type="hidden" name="form-name" value="contact" />
+
+                        <!-- +++++++++++++++++Inputs en wrapper pour disposition+++++++++++++++++ -->
+                        <div class="wrapper-inputs">
+                                <input name="nom" type="text" id="nom" required placeholder="Nom" />
+                                <input name="prenom" type="text" id="prenom" required placeholder="Prénom" />
+                        </div>
+
+                        <!-- +++++++++++++++++Inputs en wrapper pour disposition+++++++++++++++++ -->
+                        <div class="wrapper-inputs">
+                                <input name="email" type="email" id="email" required placeholder="Adresse mail" />
+                                <input name="telephone" type="tel" id="telephone" required placeholder="Téléphone" />
+                        </div>
+
+                        <!-- +++++++++++++++++Champ demande+++++++++++++++++ -->
+                        <textarea name="demande" id="demande" class="demande" placeholder="Votre demande"></textarea>
+                        <!-- +++++++++++++++++Button submit+++++++++++++++++ -->
+                        <input class="button" type="submit" value="Envoyez" />
+                </form>
+        </section>
+</div>
 
 <style>
+        .formulaire {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 50px;
+                padding: 50px;
+                background-color: var(--bgSectionA);
+        }
         .section-form {
                 display: flex;
                 flex-direction: column;
@@ -45,7 +56,6 @@
                 background-color: var(--bgHero);
                 justify-content: center;
                 align-items: center;
-               
         }
 
         .wrapper-text {
@@ -55,6 +65,14 @@
                 justify-self: center;
                 align-self: center;
                 margin-top: 40px;
+        }
+        .wrapper-form{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+                justify-content: center;
+          
         }
         .form-title {
                 text-transform: uppercase;
@@ -77,7 +95,6 @@
                 justify-content: center;
                 align-items: center;
                 gap: 20px;
-                width: 80%;
                 margin-bottom: 20px;
         }
         input {
@@ -111,7 +128,6 @@
                 color: var(--bgHero);
                 font-size: 1rem;
                 font-family: "Raleway";
-             
         }
         .demande:hover {
                 animation: bounce 0.4s ease-in-out;
@@ -133,8 +149,8 @@
                 max-width: 100px;
                 box-shadow: 0px 0px 15px 0px rgba(128, 128, 128, 0.14);
                 text-align: center;
-                margin-top: 0px;
-                margin-bottom: 100px;
+                margin-top: 40px;
+
         }
         .button:hover {
                 animation: bounce 0.4s ease-in-out;
