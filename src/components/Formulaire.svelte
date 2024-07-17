@@ -17,7 +17,7 @@
                 justify-content: center;
                 gap: 20px;
                 padding: 50px;
-                background-color: var(--bgSectionA);
+                background-color: blue;
                 height: 200px;
         }
 </style>
