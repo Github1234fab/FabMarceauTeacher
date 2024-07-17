@@ -16,8 +16,8 @@
         </div>
 
         <!-- +++++++++++++++++Formulaire+++++++++++++++++ -->
-        <form name="contact-cours" method="POST" data-netlify="true" class="form" netlify>
-                <input type="hidden" name="form-name" value="contact-cours" />
+        <form name="cours" method="POST" class="form" netlify>
+                <input type="hidden" name="form-name" value="cours" />
             
 
                 <!-- +++++++++++++++++Inputs en wrapper pour disposition+++++++++++++++++ -->
