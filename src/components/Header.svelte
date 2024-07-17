@@ -15,9 +15,15 @@
     }, 100); // 100 millisecondes d'attente pour considérer que le scroll est arrêté
   }
     onMount(() => {
+        if (typeof window !== 'undefined') {
+    // Code qui utilise `window` ici
+}
     window.addEventListener('scroll', handleScroll);
   });
     onDestroy(() => {
+        if (typeof window !== 'undefined') {
+    // Code qui utilise `window` ici
+}
     window.removeEventListener('scroll', handleScroll);
   });
 </script>
