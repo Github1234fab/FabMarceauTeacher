@@ -15,16 +15,17 @@
     }, 100); // 100 millisecondes d'attente pour considérer que le scroll est arrêté
   }
     onMount(() => {
-        if (typeof window !== 'undefined') {
-    // Code qui utilise `window` ici
-}
-    window.addEventListener('scroll', handleScroll);
+  if (typeof window !== 'undefined') {
+      // Assurez-vous que ces appels sont à l'intérieur de ce bloc
+      window.addEventListener('scroll', handleScroll);
+    }
   });
-    onDestroy(() => {
-        if (typeof window !== 'undefined') {
-    // Code qui utilise `window` ici
-}
-    window.removeEventListener('scroll', handleScroll);
+
+  onDestroy(() => {
+    if (typeof window !== 'undefined') {
+      // Assurez-vous que ces appels sont à l'intérieur de ce bloc
+      window.removeEventListener('scroll', handleScroll);
+    }
   });
 </script>
 
@@ -57,7 +58,7 @@ import StratoOne from "../assets/stratocastorOne.png";
                 position: fixed;
                 width: 100vw;
                 z-index: 3;
-                 transition: opacity 1s ease-in-out;
+                 transition: opacity 0.5s ease-in-out;
         }
         .sticky {
                 opacity: 0;
