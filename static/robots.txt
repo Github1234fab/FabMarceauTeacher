@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cours-guitare-domicile-lyon.com/sitemap.xml

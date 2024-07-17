@@ -1,32 +1,42 @@
 <script>
 </script>
 
-<section class="section-form" id="section-form">
+<section class="section-form" id="Contact">
+        
+        <!-- +++++++++++++++++Text+++++++++++++++++ -->
         <div class="wrapper-text">
                 <h1 class="form-title">Formulaire de <span>contact</span></h1>
                 <h2 class="form-contactez">Contactez-moi dès aujourdhui!</h2>
         </div>
+
+        <!-- +++++++++++++++++Coordonnées+++++++++++++++++ -->
         <div class="coordonnees">
-                <a href="mailto:gralypho@gmail.com " class="contact-form"> <i class="fa-regular fa-envelope icon-coordonnees"></i> fabien.marceau@gmail.com</a>
-                <a href="tel:0672901614" class="contact-form"><i class="fa-solid fa-phone-volume icon-coordonnees"></i> 0660 376 567</a>
+                <a href="mailto:fabien.marceau@gmail.com " class="contact-form"> <i class="fa-regular fa-envelope icon-coordonnees"></i> fabien.marceau@gmail.com</a>
+                <a href="tel:0660376567" class="contact-form"><i class="fa-solid fa-phone-volume icon-coordonnees"></i> 0660 376 567</a>
         </div>
 
-        <form name="contact-form-gralypho" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="form">
-                <input type="hidden" name="form-name" value="contact-form-gralypho" />
+        <!-- +++++++++++++++++Formulaire+++++++++++++++++ -->
+        <form name="contact-cours" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="form">
+                <input type="hidden" name="form-name" value="contact-cours" />
+                <input type="hidden" name="bot-field" />
 
+                <!-- +++++++++++++++++Inputs en wrapper pour disposition+++++++++++++++++ -->
                 <div class="wrapper-inputs">
                         <input name="nom" type="text" id="nom" required placeholder="Nom" />
                         <input name="prenom" type="text" id="prenom" required placeholder="Prénom" />
                 </div>
 
+                <!-- +++++++++++++++++Inputs en wrapper pour disposition+++++++++++++++++ -->
                 <div class="wrapper-inputs">
                         <input name="email" type="email" id="email" required placeholder="Adresse mail" />
-
                         <input name="telephone" type="tel" id="telephone" required placeholder="Téléphone" />
                 </div>
 
+                <!-- +++++++++++++++++Champ demande+++++++++++++++++ -->
                 <textarea name="demande" id="demande" class="demande" placeholder="Votre demande"></textarea>
         </form>
+
+        <!-- +++++++++++++++++Button submit+++++++++++++++++ -->
         <input class="button" type="submit" value="Envoyez" />
 </section>
 
@@ -120,7 +130,7 @@
                 background-color: transparent;
                 color: var(--bgHero);
                 font-size: 1rem;
-                        font-family: "Raleway";
+                font-family: "Raleway";
         }
         .demande:hover {
                 animation: bounce 0.4s ease-in-out;
@@ -149,7 +159,7 @@
                 animation: bounce 0.4s ease-in-out;
         }
         .button:active {
-          border: 2px solid  rgb(140, 140, 240);
+                border: 2px solid rgb(140, 140, 240);
         }
         @keyframes bounce {
                 0% {

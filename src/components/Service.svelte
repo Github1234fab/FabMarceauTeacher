@@ -19,7 +19,7 @@
         ];
 </script>
 
-<section class="service" id="Services">
+<section class="service" id="Tarifs">
         <div class="wrapper-text">
                 <h1 class="title"><span>Tarifs</span> et avantages</h1>
                 <p>Un prix unique de 119 euros, et vous n'en payez que la moitiée!</p>
@@ -78,6 +78,9 @@
                 border-radius: 10px;
                 margin-top: 40px;
                 box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.254);
+        }
+        .tarif h1 {
+                color: white;
         }
         .tarif h2{
                 color: var(--bgHero);

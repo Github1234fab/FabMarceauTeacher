@@ -22,7 +22,12 @@
         ];
 </script>
 
-<section class="About" id="About">
+<section class="About" id="A_propos">
+        <div class="wrapper-frames-circle">
+                {#each tab as info}
+                        <Block icon={info.icon} title={info.title} paragraph={info.paragraph} />
+                {/each}
+        </div>
         <div class="wrapper-text">
                 <img src={ProfilPicture} alt="" class="img" />
                 <div class="wrapper-text">
@@ -36,11 +41,7 @@
                         </p>
                 </div>
         </div>
-        <div class="wrapper-frames-circle">
-                {#each tab as info}
-                        <Block icon={info.icon} title={info.title} paragraph={info.paragraph} />
-                {/each}
-        </div>
+        
 </section>
 
 <style>
@@ -52,16 +53,18 @@
         }
         .img {
                 grid-column: 1/2;
-                grid-row: 1;
+                grid-row: 2;
                 width: 400px;
                 height: 400px;
                 margin: 0 auto;
                 display: block;
                 margin-top: 20px;
+                border-radius: 50%;
+                transform: rotate(2deg);
         }
         .wrapper-text {
                 grid-column: 1;
-                grid-row: 1;
+                grid-row: 3;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -82,12 +85,13 @@
         }
         .wrapper-frames-circle {
                 grid-column: 1/3;
-                grid-row: 2;
+                grid-row: 1;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 20px;
                 margin-bottom: 50px;
+                margin-top: 50px;
         }
 
         @media screen and (max-width: 768px) {
@@ -97,17 +101,15 @@
                 }
                 .img {
                         grid-column: 1;
-                        grid-row: 1;
+                        grid-row: 2;
                         width: 250px;
                         height: 250px;
                         align-self: center;
                         margin-top: -20px;
-                        /* border-radius: 50%; */
-                        /* transform: rotate(2deg); */
                 }
                 .wrapper-text {
                         grid-column: 1;
-                        grid-row: 2;
+                        grid-row: 3;
                         gap: 20px;
                         margin-top: 20px;
                 }
@@ -120,7 +122,7 @@
                 }
                 .wrapper-frames-circle {
                         grid-column: 1/3;
-                        grid-row: 3;
+                        grid-row: 1;
                         display: flex;
                         flex-direction: column;
                         align-items: center;

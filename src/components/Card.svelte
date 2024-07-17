@@ -19,7 +19,7 @@
                 border-radius: 8px;
                 max-width: 200px;
                 min-width: 170px;
-                min-height: 100px;
+                min-height: 120px;
                 flex: 1 1 10%;
                 background-color: transparent;
         }

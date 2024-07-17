@@ -15,10 +15,10 @@
 
         <div class="menu">
  
-                <a href="#Products">Cours</a>
-                <a href="#Services">Tarifs</a>
-                               <a href="#About">Profil</a>
-                <a href="#section-form">Contact</a>
+                <a href="#cours_de_guitare">Cours</a>
+                <a href="#Tarifs">Tarifs</a>
+                               <a href="#A_propos">Profil</a>
+                <a href="#Contact">Contact</a>
         </div>
 </header>
 
