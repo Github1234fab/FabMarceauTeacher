@@ -1,4 +1,4 @@
-<section class="section-form" id="Contact">
+<section class="section-form" id="section-form">
 
 <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 <input type="hidden" name="form-name" value="contact">
