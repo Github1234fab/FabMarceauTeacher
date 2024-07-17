@@ -16,7 +16,7 @@
 
 
 <section class="section-form" id="Contact">
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/confirmation-inscription.html">
+        <form name="contact" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
 
                 <!-- +++++++++++++++++Inputs en wrapper pour disposition+++++++++++++++++ -->
