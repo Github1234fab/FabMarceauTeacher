@@ -1,4 +1,4 @@
-<section class="formulaire" id="Contact">
+<section class="section-form" id="Contact">
 
 <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 <input type="hidden" name="form-name" value="contact">
@@ -10,7 +10,7 @@
 </section>
 
 <style>
-.formulaire {
+.section-form {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
