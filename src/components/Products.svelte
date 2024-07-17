@@ -82,7 +82,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                height: calc(100vh + 1000px);
+                height: calc(100vh + 400px);
                 gap: 80px;
                 padding: 100px;
                 background: radial-gradient(rgb(109, 109, 212), rgb(10, 10, 105));

@@ -9,12 +9,12 @@
                 {
                         icon: Balance,
                         title: "Avance de crédit d'impôt",
-                        paragraph: "Avec le service à la personne, vous bénéficiez d'une réduction d'impôt de 50% sur le montant des cours. Vous avancez 119 euros, mais vous n'en payerez au final que la moitiée, c'est à dire 59,50 euros!!",
+                        paragraph: "Avec le service à la personne, vous bénéficiez d'une réduction d'impôt de 50% sur le montant des cours. Vous avancez 119 euros, mais vous n'en payerez au final que la moitiée, c'est à dire 59 euros!!",
                 },
                 {
                         icon: Money,
                         title: "Tarifs compétitifs",
-                        paragraph: "Un cours d'une heure à domicile pour 59,50 euros, c'est un tarif unique et compétitif. Vous ne trouverez pas moins cher pour un cours donné par un professionnel, à domicile !",
+                        paragraph: "Un cours d'une heure à domicile pour 59 euros, c'est un tarif unique et compétitif. Vous ne trouverez pas moins cher pour un cours donné par un professionnel, à domicile !",
                 },
         ];
 </script>
@@ -24,7 +24,7 @@
                 <h1 class="title"><span>Tarifs</span> et avantages</h1>
                 <p>Un prix unique de 119 euros, et vous n'en payez que la moitiée!</p>
                 <div class="tarif">
-                        <h1>Tarif Unique</h1>
+                        <h1>Tarif unique</h1>
                         <h2> 59 €/1 heure</h2>
                 </div>
         </div>
@@ -39,7 +39,7 @@
 <style>
         .service {
                 display: flex;
-                height: calc(100vh + 400px);
+                height: calc(100vh + 300px);
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
@@ -53,6 +53,7 @@
                 align-items: center;
                 justify-content: center;
                 gap: 20px;
+                margin-bottom: 20px;
         }
         .service h1 {
                 font-weight: 800;
@@ -73,24 +74,24 @@
                 align-items: center;
                 justify-content: center;
                 gap: 20px;
-                padding: 25px;
-                background-color: var(--CTA);
+                padding: 35px;
+                background-image: radial-gradient(rgb(109, 109, 212), rgb(10, 10, 105));
                 border-radius: 10px;
-                margin-top: 40px;
+                margin-top: 80px;
                 box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.254);
         }
         .tarif h1 {
                 color: white;
         }
         .tarif h2{
-                color: var(--bgHero);
+                color: var(--white);
         }
         .wrapper-frames-circles {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 50px;
-                margin-top: 50px;
+                margin-top: 10px;
                 margin-bottom: 50px;
         }
         @media screen and (max-width: 768px) {

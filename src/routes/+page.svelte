@@ -15,5 +15,4 @@
 <CTA />
 <Social /> 
 <Formulaire />
-<style>
-</style>
+

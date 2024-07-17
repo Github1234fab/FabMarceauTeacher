@@ -2,31 +2,31 @@
         import { onMount, onDestroy } from "svelte";
         import StratoOne from "../assets/stratocastorOne.png";
         let header;
-          let scrollTimeout;
+        let scrollTimeout;
 
-      function handleScroll() {
-    header.classList.add('sticky');
+        function handleScroll() {
+                header.classList.add("sticky");
 
-    // Réinitialise et définit le timeout à chaque événement de scroll
-    clearTimeout(scrollTimeout);
-    scrollTimeout = setTimeout(() => {
-      // Retire la classe sticky quand le scroll s'arrête
-      header.classList.remove('sticky');
-    }, 100); // 100 millisecondes d'attente pour considérer que le scroll est arrêté
-  }
-    onMount(() => {
-  if (typeof window !== 'undefined') {
-      // Assurez-vous que ces appels sont à l'intérieur de ce bloc
-      window.addEventListener('scroll', handleScroll);
-    }
-  });
+                // Réinitialise et définit le timeout à chaque événement de scroll
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(() => {
+                        // Retire la classe sticky quand le scroll s'arrête
+                        header.classList.remove("sticky");
+                }, 100); // 100 millisecondes d'attente pour considérer que le scroll est arrêté
+        }
+        onMount(() => {
+                if (typeof window !== "undefined") {
+                        // Assurez-vous que ces appels sont à l'intérieur de ce bloc
+                        window.addEventListener("scroll", handleScroll);
+                }
+        });
 
-  onDestroy(() => {
-    if (typeof window !== 'undefined') {
-      // Assurez-vous que ces appels sont à l'intérieur de ce bloc
-      window.removeEventListener('scroll', handleScroll);
-    }
-  });
+        onDestroy(() => {
+                if (typeof window !== "undefined") {
+                        // Assurez-vous que ces appels sont à l'intérieur de ce bloc
+                        window.removeEventListener("scroll", handleScroll);
+                }
+        });
 </script>
 
 <!-- <script>
@@ -58,7 +58,7 @@ import StratoOne from "../assets/stratocastorOne.png";
                 position: fixed;
                 width: 100vw;
                 z-index: 3;
-                 transition: opacity 0.5s ease-in-out;
+                transition: opacity 0.5s ease-in-out;
         }
         .sticky {
                 opacity: 0;
