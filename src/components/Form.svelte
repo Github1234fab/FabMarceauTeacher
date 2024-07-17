@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
         import Formulaire from "../components/Formulaire.svelte";
 </script>
 
@@ -25,4 +25,4 @@
                 font-size: 1.3rem;
                 font-weight: 400;
         }
-</style>
+</style> -->
