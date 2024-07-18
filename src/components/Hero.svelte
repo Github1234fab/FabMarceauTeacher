@@ -5,9 +5,9 @@
 <section class="hero">
         <div class="wrapper-text">
                 <h1>Cours de <span>Guitare</span></h1>
-                <h2>Apprenez la guitare avec un professeur de guitare passionné !</h2>
+                <h2>Apprenez la guitare avec un professeur de guitare très <span> reconnu</span> et <span>expérimenté !</span></h2>
                 <p>Vous souhaitez apprendre la guitare ou vous perfectionner tout en restant chez vous, dans votre confort? <br /> Ne bougez surtout pas...j'arrive!</p>
-             <div class="button"><Button /></div>
+                <div class="button"><Button /></div>
         </div>
 </section>
 
@@ -27,7 +27,6 @@
                 /* padding: 50px; */
         }
         .wrapper-text {
-         
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
@@ -53,10 +52,15 @@
                 font-size: 1.5rem;
                 font-weight: 300;
         }
+          .hero h2 span {
+                font-weight: 700;
+                color: white;
+        }
         .hero p {
                 line-height: 25px;
                 font-weight: 200;
         }
+      
         .button {
                 display: flex;
                 align-items: center;
@@ -64,11 +68,10 @@
                 z-index: 0;
                 margin-top: 25px;
         }
-   
 
         @media screen and (max-width: 550px) {
                 .hero {
-                        height: calc(100vh  +  100px);
+                        height: calc(100vh + 100px);
                         align-items: center;
                         justify-content: center;
                         padding: 30px;
