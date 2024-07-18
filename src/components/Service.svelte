@@ -22,7 +22,7 @@
 <section class="service" id="Tarifs">
         <div class="wrapper-text">
                 <h1 class="title"><span>Tarifs</span> et avantages</h1>
-                <p>Un prix unique de 119 euros, et vous n'en payez que la moitiée!</p>
+                <p>Un prix unique de 119 euros, et vous n'en payez que la moitié!</p>
                 <div class="tarif">
                         <h1>Tarif unique</h1>
                         <h2> 59 €/1 heure</h2>
