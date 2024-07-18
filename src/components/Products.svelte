@@ -82,7 +82,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                height: calc(100vh + 400px);
+                height: calc(100vh + 100px);
                 gap: 80px;
                 padding: 100px;
                 background: radial-gradient(rgb(109, 109, 212), rgb(10, 10, 105));
@@ -92,7 +92,6 @@
                 font-weight: 800;
                 color: var(--white);
                 font-size: 2rem;
-        
         }
         .products p {
                 font-weight: 400;
@@ -102,9 +101,9 @@
                 margin-top: -30px;
                 text-align: left;
         }
-            .wrapper-cardA{
-                  margin-top: 30px;
-            }
+        .wrapper-cardA {
+                margin-top: 30px;
+        }
         .wrapper-cardA,
         .wrapper-cardB {
                 display: flex;
@@ -113,7 +112,6 @@
                 gap: 30px;
                 flex-wrap: wrap;
                 width: 100%;
-         
         }
         .wrapper-competence-value {
                 display: flex;
@@ -137,9 +135,11 @@
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.454);
         }
 
-        @media screen and (max-width: 1370px) {
-                .wrapper-cardA,
-                .wrapper-cardB {
+        @media screen and (max-width: 1369px) {
+                .products {
+                        height:  calc(100vh + 300px);
+                }
+                       .wrapper-cardB, .wrapper-cardA {
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -147,9 +147,39 @@
                         gap: 40px;
                         width: 60%;
                 }
+          
+        }
+                @media screen and (max-width: 1184px) {
+                .products {
+                        height:  calc(100vh + 450px);
+                }
+                       .wrapper-cardB, .wrapper-cardA {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap: 40px;
+                        width: 60%;
+                }
+          
         }
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 860px) {
+                .products {
+                        height:1650px
+                }
+                         .wrapper-cardB, .wrapper-cardA {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap: 40px;
+                        width: 90%;
+                }
+          
+        }
+
+        @media screen and (max-width: 768px) {
                 .products {
                         padding: 50px;
                         height: 3000px;

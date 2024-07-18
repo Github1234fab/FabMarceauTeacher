@@ -20,7 +20,7 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
-                height: calc(100vh + 200px);
+                height: calc(100vh + 100px);
                 align-items: center;
                 justify-content: center;
                 padding: 50px;

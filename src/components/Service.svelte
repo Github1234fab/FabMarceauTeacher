@@ -39,7 +39,7 @@
 <style>
         .service {
                 display: flex;
-                height: calc(100vh + 300px);
+                height: calc(100vh + 0px);
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
@@ -93,6 +93,18 @@
                 gap: 50px;
                 margin-top: 10px;
                 margin-bottom: 50px;
+        }
+              @media screen and (max-width: 1024px) {
+                .service {
+                        display: flex;
+                        height: 1100px;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 70px;
+                        padding: 50px;
+                        background-color: var(--bgSectionA);
+                }
         }
         @media screen and (max-width: 768px) {
                 .service {
