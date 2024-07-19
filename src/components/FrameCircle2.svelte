@@ -2,12 +2,15 @@
         export let icon;
         export let title;
         export let paragraph;
+        export let button;
+        export let lien;
 </script>
 
 <div class="frame-circle">
         <div class="circle"><img src={icon} alt="" class="icon" /></div>
         <h1>{title}</h1>
         <p>{paragraph}</p>
+        <a target="_blank" href={lien} class="button">{button} </a>
 </div>
 
 <style>
@@ -15,8 +18,26 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                gap: 50px;
+                min-height: 600px;
+        }
+        .button {
+                display: flex;
+                align-items: center;
                 justify-content: center;
-                gap: 20px;
+                background-color: var(--CTA);
+                padding: 20px;
+                border-radius: 10px;
+                transition: 0.3s ease-in-out;
+                color: white;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.215);
+                min-width: 150px;
+                font-weight: 500;
+           
+        }
+        a {
+                text-decoration: none;
+                color: white;
         }
 
         .circle {
@@ -29,18 +50,27 @@
                 border: 1px solid var(--CTA);
         }
         .frame-circle h1 {
-                top: 20px;
                 color: rgb(31, 29, 29);
                 text-align: center;
                 font-size: 1.5rem;
                 font-weight: 600;
         }
         .frame-circle p {
-                top: 150px;
                 color: rgb(31, 29, 29);
                 text-align: center;
                 font-size: 1rem;
                 font-weight: 400;
                 line-height: 25px;
+                max-width: 200px;
+                min-height: 150px;
+        }
+
+        @media screen and (max-width: 768px){
+                   .frame-circle {
+                gap: 20px;
+                min-height: 400px;
+        
+
+        }
         }
 </style>

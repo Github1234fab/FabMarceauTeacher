@@ -6,13 +6,17 @@
         import Social from "../components/Social.svelte";
         import CTA from "../components/CTA.svelte";
         import Formulaire from "../components/Formulaire.svelte";
+        import Resa from "../components/Resa.svelte";
 </script>
+
 
 <Hero />
 <Products />
 <About />
 <Service /> 
 <Social /> 
+<Resa />
 <CTA />
 <Formulaire />
+
 

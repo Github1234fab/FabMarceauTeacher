@@ -5,7 +5,7 @@
 <section class="hero">
         <div class="wrapper-text">
                 <h1>Cours de <span>Guitare</span></h1>
-                <h2>Apprenez la guitare avec un professeur de guitare très <span> reconnu</span> et <span>expérimenté !</span></h2>
+                <h2>Apprenez la guitare avec un professeur de guitare <span> reconnu</span> et <span>expérimenté !</span></h2>
                 <p>Vous souhaitez apprendre la guitare ou vous perfectionner tout en restant chez vous, dans votre confort? <br /> Ne bougez surtout pas...j'arrive!</p>
                 <div class="button"><Button /></div>
         </div>
@@ -51,6 +51,7 @@
         .hero h2 {
                 font-size: 1.5rem;
                 font-weight: 300;
+                line-height: 25px;
         }
           .hero h2 span {
                 font-weight: 700;

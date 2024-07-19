@@ -3,6 +3,7 @@
         import Contract from "../assets/file-signature-solid.svg";
         import Money from "../assets/money-check-dollar-solid.svg";
         import Balance from "../assets/scale-balanced-solid.svg";
+        import Blob from "../assets/blob.svg";
 
         const tabServices = [
                 { icon: Contract, title: "Fiabilité", paragraph: "Signez le contrat qui définit le cadre des cours  à domicile et vous protègera entre autre de l'annulation intempestive. Réservez votre cours, procéder au paiement et 'let's go for learn! '" },
@@ -24,8 +25,9 @@
                 <h1 class="title"><span>Tarifs</span> et avantages</h1>
                 <p>Un prix unique de 119 euros, et vous n'en payez que la moitié!</p>
                 <div class="tarif">
+                        <img class="blob" src={Blob} alt="" />
                         <h1>Tarif unique</h1>
-                        <h2> 59 €/1 heure</h2>
+                        <h2>59 €/1 heure</h2>
                 </div>
         </div>
 
@@ -55,6 +57,13 @@
                 gap: 20px;
                 margin-bottom: 20px;
         }
+        .blob {
+                position: absolute;
+                z-index: 0;
+                top: -190px;
+                left: -130px;
+                height: 500px;
+        }
         .service h1 {
                 font-weight: 800;
                 font-size: 2rem;
@@ -73,28 +82,30 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                gap: 20px;
+                gap: 10px;
                 padding: 35px;
-                background-image: radial-gradient(rgb(109, 109, 212), rgb(10, 10, 105));
+                background: transparent;
                 border-radius: 10px;
                 margin-top: 80px;
-                box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.254);
+                position: relative;
         }
         .tarif h1 {
                 color: white;
+                z-index: 2;
         }
-        .tarif h2{
-                color: var(--white);
+        .tarif h2 {
+                color: white;
+                z-index: 2;
         }
         .wrapper-frames-circles {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 50px;
-                margin-top: 10px;
+                margin-top: 100px;
                 margin-bottom: 50px;
         }
-              @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1024px) {
                 .service {
                         display: flex;
                         height: 1100px;
@@ -107,9 +118,14 @@
                 }
         }
         @media screen and (max-width: 768px) {
+                .blob{
+                        height: 350px;
+                        top: -110px;
+                        left: -76px;
+                }
                 .service {
                         display: flex;
-                        height: 1700px;
+                        height: 2000px;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
@@ -118,7 +134,8 @@
                         background-color: var(--bgSectionA);
                 }
                 .wrapper-text {
-                        margin-top: -50px;
+                        margin-top: -55px;
+                        gap: 30px;
                 }
 
                 .wrapper-frames-circles {
@@ -126,20 +143,18 @@
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
-                        gap: 70px;
+                        gap: 100px;
                 }
-                .title{
-                        margin-top: 50px
+                .title {
+                        margin-top: 50px;
                 }
-                .tarif h1{
+                .tarif h1 {
                         font-size: 1.5rem;
-
                 }
-                   .tarif h2{
+                .tarif h2 {
                         font-size: 1.2rem;
-                        
                 }
-                .tarif{
+                .tarif {
                         min-width: 200px;
                 }
         }

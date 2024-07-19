@@ -3,7 +3,7 @@
 </script>
 
 <section class="CTA">
-        <h1>Visez le meilleur, choisissez la passion et l'expérience.</h1>
+        <h1>Visez le meilleur, choisissez la <span>passion</span> et <span>l'expérience.</span></h1>
         <div class="wrapper">
                 <p>Apprendre, se perfectionner, progresser, découvrir. Quoi de mieux que d'être accompagné par un professionnel . C'est l'occasion de bénéficier d'une grande expertise et de poser toutes vos questions, d'aborder tout ce que vous voulez en étant accompagné, dans la bienveillance et la bonne humeur!</p>
                         <Button />
@@ -33,6 +33,9 @@
                 color: white;
                 margin-top: 400px;
         }
+        .CTA h1 span{
+                color: var(--CTA);
+        }
         .CTA p {
                 font-size: 1rem;
                 line-height: 25px;
@@ -53,6 +56,7 @@
                 }
                 .CTA{
                                  height: calc(100vh + 650px);
+                                 height: 1300px;
                 }
         }
 </style>

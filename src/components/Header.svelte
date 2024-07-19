@@ -1,9 +1,16 @@
 <script>
-        import { onMount} from "svelte";
+        import { onMount } from "svelte";
         import StratoOne from "../assets/stratocastorOne.png";
         let header;
+        let menu;
+        let windowWidth;
 
         let scrollTimeout;
+
+        // Fonction pour mettre à jour la largeur de la fenêtre
+        function updateWidth() {
+                windowWidth = window.innerWidth;
+        }
 
         function handleScroll() {
                 header.classList.add("sticky");
@@ -16,27 +23,28 @@
                 if (typeof window !== "undefined") {
                         window.addEventListener("scroll", handleScroll);
                 }
+
+                window.addEventListener("resize", updateWidth);
+                updateWidth(); // Initialisation de la largeur
+
+                // Nettoyage lors de la destruction du composant
+                return () => {
+                        window.removeEventListener("resize", updateWidth);
+                };
         });
-
-        //comportement bizarre à l'ouverture du projet , pour  l'instant, on Destroy en commentaire
-        // onDestroy(() => {
-        //         if (typeof window !== "undefined") {
-        //                 window.removeEventListener("scroll", handleScroll);
-        //         }
-        // });
 </script>
-
-
 
 <header bind:this={header}>
         <div class="container-strat">
                 <img class="strato" src={StratoOne} alt="Guitare" />
         </div>
-        <div class="sticky hidden"></div>
+        <div class="sticky hidden header-big-height"></div>
+        <div class="menu-vertical hidden"></div>
 
-        <div class="menu">
+        <div class:menu-vertical={windowWidth < 450} class="menu">
                 <a href="#cours_de_guitare">Cours</a>
                 <a href="#Tarifs">Tarifs</a>
+                <a href="#reservation">Réservation</a>
                 <a href="#A_propos">Profil</a>
                 <a href="#Contact">Contact</a>
         </div>
@@ -82,6 +90,17 @@
                 font-size: 1rem;
                 gap: 20px;
         }
+        .hidden {
+                display: none;
+        }
+
+        .menu-vertical {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
+                gap: 6px;
+        }
         .menu a {
                 text-decoration: none;
                 color: white;
@@ -92,5 +111,23 @@
         }
         .menu a:hover {
                 color: var(--CTA);
+        }
+
+        @media screen and (max-width: 450px) {
+                header {
+                        height: 250px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        background-color: var(--bgHeader);
+                        padding: 20px;
+                        gap: 20px;
+                }
+                .strato {
+                        height: 70px;
+                        margin-left: 3px;
+                }
+           
         }
 </style>
