@@ -135,9 +135,9 @@
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.454);
         }
 
-        @media screen and (max-width: 1369px) {
+        @media screen and (max-width: 1440px) {
                 .products {
-                        height:  calc(100vh + 300px);
+                        height:  calc(100vh + 700px);
                 }
                        .wrapper-cardB, .wrapper-cardA {
                         display: flex;
@@ -151,7 +151,7 @@
         }
                 @media screen and (max-width: 1184px) {
                 .products {
-                        height:  calc(100vh + 450px);
+                        height:  calc(100vh + 1150px);
                 }
                        .wrapper-cardB, .wrapper-cardA {
                         display: flex;

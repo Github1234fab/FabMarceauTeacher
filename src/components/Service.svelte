@@ -41,7 +41,7 @@
 <style>
         .service {
                 display: flex;
-                height: calc(100vh + 0px);
+                height: calc(100vh + 600px);
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
@@ -105,6 +105,18 @@
                 margin-top: 100px;
                 margin-bottom: 50px;
         }
+             @media screen and (max-width: 1440px) {
+                .service {
+                        display: flex;
+                        height: 1100px;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 70px;
+                        padding: 50px;
+                        background-color: var(--bgSectionA);
+                }
+        }
         @media screen and (max-width: 1024px) {
                 .service {
                         display: flex;
@@ -157,5 +169,10 @@
                 .tarif {
                         min-width: 200px;
                 }
+        }
+        @media screen and (max-width: 425px) {
+                  .service {
+                        height: 1900px;
+                } 
         }
 </style>

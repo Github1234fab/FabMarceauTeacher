@@ -70,9 +70,18 @@
                 margin-top: 25px;
         }
 
-        @media screen and (max-width: 550px) {
+      @media screen and (max-width: 1024px) {
+         .hero {
+                        height: calc(100vh + 300px);
+                        align-items: center;
+                        justify-content: center;
+                        padding: 30px;
+                }
+      }
+
+        @media screen and (max-width: 425px) {
                 .hero {
-                        height: calc(100vh + 100px);
+                        height: calc(100vh + 400px);
                         align-items: center;
                         justify-content: center;
                         padding: 30px;

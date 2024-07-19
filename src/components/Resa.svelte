@@ -50,10 +50,23 @@
                 margin-top: 10px;
                 margin-bottom: 50px;
         }
-        @media screen and (max-width: 1050px) {
+
+                @media screen and (max-width: 1440px){
                 .reservation {
                         display: flex;
-                           height: 2800px;
+                        height: 1000px;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 70px;
+                        padding: 50px;
+                        background-color: var(--bgSectionA);    
+                }
+        }
+        @media screen and (max-width: 1024px) {
+                .reservation {
+                        display: flex;
+                           height: 2600px;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;

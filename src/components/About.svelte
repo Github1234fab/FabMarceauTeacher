@@ -93,8 +93,9 @@
                 justify-content: center;
                 gap: 20px;
                 margin-bottom: 50px;
-                margin-top: 50px;
+                margin-top: 100px;
         }
+      
 
         @media screen and (max-width: 768px) {
                 .About {

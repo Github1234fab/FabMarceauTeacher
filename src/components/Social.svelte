@@ -146,6 +146,7 @@
                 }
                 .social {
                         padding: 20px;
+                         height: 2500px;
                 }
                 .wrapper-text {
                         width: 80%;
@@ -177,6 +178,18 @@
                 }
         }
 
+                @media screen and (max-width: 1440px) {
+                        .social {
+                        padding: 20px;
+                        height: calc(100vh + 900px);
+                }  
+                }
+                   @media screen and (max-width: 1024px) {
+                        .social {
+                        padding: 20px;
+                        height: calc(100vh + 1100px);
+                }  
+                }
         @media screen and (max-width: 810px) {
                 .wrapper-video,
                 .wrapper-img {
@@ -221,6 +234,12 @@
                         margin-top: 20px;
                         padding: 30px;
                         gap: 50px;
+                }
+        }
+          @media screen and (max-width: 425px) {
+                  .social {
+                       
+                        height: calc(100vh + 1300px);
                 }
         }
 </style>
