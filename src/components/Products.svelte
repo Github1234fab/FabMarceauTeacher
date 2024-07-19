@@ -45,7 +45,7 @@
 </script>
 
 <section class="products" id="cours_de_guitare">
-        <h1>Apprendre en jouant</h1>
+        <h1>Apprendre la Guitare en jouant</h1>
         <p>La meilleure manière d'apprendre la guitare ou de se perfectionner, c'est de jouer! Jouer et partager pour comprendre, jouer pour se tromper, jouer pour apprendre et progresser.</p>
         <div class="wrapper-competence-value">
                 <div class="wrapper-values">

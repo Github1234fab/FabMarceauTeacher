@@ -23,7 +23,7 @@
 <style>
         .reservation {
                 display: flex;
-                height: calc(100vh - 300px);
+                height: calc(100vh );
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
@@ -50,16 +50,23 @@
                 margin-top: 10px;
                 margin-bottom: 50px;
         }
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1050px) {
                 .reservation {
                         display: flex;
-                        height: 1100px;
+                           height: 2800px;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
                         gap: 70px;
                         padding: 50px;
                         background-color: var(--bgSectionA);
+                }
+                .wrapper-frames-circles {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 160px;
                 }
         }
         @media screen and (max-width: 768px) {
@@ -86,5 +93,4 @@
                         text-align: center;
                 }
         }
-
 </style>

@@ -4,47 +4,49 @@
 
 <section class="social">
         <div class="wrapper-text">
-                <h1>Directeur, Formateur, enseignant</h1>
-                <p>Ma passion pour la musique et la pédagogie m'a conduit en 2009 à créer l'école de guitare de Lyon, grâce au soutien du maire de Lyon 6, à l'époque J.J David. <br> Ensuite j'ai créé l'école de piano de Lyon, puis l'école de Chant de Lyon et finalement, j'ai regroupé ces trois écoles sous le nom "École de musique issétys".  Aujourd'hui l'école de musique Issétys enseigne la guitare, le piano, la basse, le chant, le ukulélé et la batterie.  </p>
+                <h1>Directeur, Formateur, <span>Professeur</span></h1>
+                <p>Ma passion pour la musique et la pédagogie m'a conduit en 2009 à créer l'École de musique issétys. Aujourd'hui l'école de musique Issétys enseigne la guitare, le piano, la basse, le chant, le ukulélé et la batterie.</p>
         </div>
         <div class="wrapper-media">
                 <div class="wrapper-video wrapper-position-A">
-                        <h2>L'école de Musique <span>ISSÉTYS</span></h2>
+                        <h2>Directeur - fondateur <br />de L'école de Musique <span>ISSÉTYS Lyon 6</span></h2>
                         <div class="iframe-container">
                                 <iframe class="iframe" title="interview Issetys ecole de musique" src="https://www.youtube.com/embed/yH6rYXOxqQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
                         </div>
-                        <p>Ma mère était institutrice et m'a donné cette passion pour la pédagogie. C'est un bonheur de former chaque jour des musiciens, depuis 17 ans. Ils témoignent ici, lors d'un reportage tourné à l'école de musique Issétys. </p>
+                        <p>Ma mère était institutrice et m'a donné cette passion pour la pédagogie. C'est un bonheur de former chaque jour des musiciens, depuis 17 ans. Ils témoignent ici, lors d'un reportage tourné à l'école de musique Issétys.</p>
                 </div>
                 <div class="wrapper-img wrapper-position-B">
-                        <h2>Les <span>CONCERTS </span>Issétys</h2>
+                        <h2>Formateur et <span>Professeur</span></h2>
                         <img src={Concert} alt="" class="concert" />
-                        <p>L'aboutissement! La scène, le public, les lumières...ça fait un peu peur mais c'est tellement galvanisant !</p>
+                        <p>Enseigner, transmettre au plus expérimentés comme à ceux qui n'ont jamais pratiqué. Enseigner aux adultes, comme aux enfants. Chaque élève a un profil différent.</p>
                 </div>
         </div>
 </section>
 
 <style>
         .iframe-container {
-                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 width: 100%;
-                padding-bottom: 56.25%; /* 16:9 aspect ratio */
-                height: 0;
+                /* padding-bottom: 56.25%;  */
+                height: 500px;
                 overflow: hidden;
         }
         .iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
+                justify-content: center;
+                align-self: center;
                 width: 100%;
                 height: 100%;
                 border-radius: 10px;
+                box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.259);
         }
         .social {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                height: auto;
+                height: calc(100vh + 500px);
                 gap: 50px;
                 padding: 50px;
                 background-color: var(--CTA);
@@ -56,23 +58,30 @@
                 justify-content: center;
                 gap: 20px;
                 width: 60%;
-                margin-top: 5cqb;
+                margin-top: 50px;
         }
         .social h1 {
                 font-size: 2rem;
                 font-weight: 800;
                 color: white;
         }
+        .social h1 span {
+                font-size: 2rem;
+                font-weight: 800;
+                color: black;
+        }
+
         .social p {
                 font-size: 1rem;
-                font-weight: 400;
+                font-weight: 300;
                 line-height: 25px;
                 color: white;
+                text-align: center;
         }
         .concert {
                 border-radius: 10px;
-                max-width: 500px;
-                max-height: 300px;
+                width: 500px;
+                height: 300px;
                 box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.259);
         }
 
@@ -83,6 +92,7 @@
                 margin-top: 50px;
                 padding: 30px;
                 margin-bottom: 50px;
+                gap: 40px;
         }
         .wrapper-img h2 span,
         .wrapper-video h2 span {
@@ -100,12 +110,11 @@
         .wrapper-video p,
         .wrapper-img p {
                 font-size: 1rem;
-                font-weight: 200;
+                font-weight: 500;
                 line-height: 25px;
                 color: white;
                 width: 90%;
                 text-align: left;
-           
         }
         .wrapper-position-A {
                 grid-column: 1;
@@ -129,7 +138,7 @@
                 .wrapper-video p,
                 .wrapper-img p {
                         font-size: 1rem;
-                        font-weight: 200;
+                        font-weight: 500;
                         line-height: 25px;
                         color: white;
                         width: 60%;
@@ -141,8 +150,14 @@
                 .wrapper-text {
                         width: 80%;
                 }
+                .iframe {
+                        height: 80%;
+                        width: 80%;
+                        left: 100px;
+                }
                 .concert {
-                        height: 150px;
+                        max-width: 400px;
+                        min-height: 180px;
                 }
 
                 .wrapper-position-A {
@@ -154,41 +169,42 @@
                         grid-row: 2;
                 }
                 .wrapper-media {
-                        display: grid;
-                        grid-template-columns: 1fr;
-                        grid-template-rows: auto;
+                        display: flex;
+                        flex-direction: column;
                         margin-top: 20px;
                         padding: 30px;
                         gap: 50px;
                 }
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 810px) {
                 .wrapper-video,
                 .wrapper-img {
                         display: flex;
                         flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: flex-start;
+                        align-items: centert;
+                        justify-content: center;
                         gap: 20px;
                 }
                 .wrapper-video p,
                 .wrapper-img p {
                         font-size: 1rem;
-                        font-weight: 300;
+                        font-weight: 600;
                         line-height: 25px;
                         color: white;
                         width: 80%;
-                        text-align: left;
+                        text-align: center;
                 }
                 .social {
                         padding: 20px;
+                        height: calc(100vh + 800px);
                 }
                 .wrapper-text {
                         width: 80%;
                 }
                 .concert {
-                        height: 150px;
+                        max-width: 300px;
+                        max-height: 40px;
                 }
 
                 .wrapper-position-A {
@@ -200,9 +216,8 @@
                         grid-row: 2;
                 }
                 .wrapper-media {
-                        display: grid;
-                        grid-template-columns: 1fr;
-                        grid-template-rows: auto;
+                        display: flex;
+                        flex-direction: column;
                         margin-top: 20px;
                         padding: 30px;
                         gap: 50px;

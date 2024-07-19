@@ -123,6 +123,7 @@
                         background-color: var(--bgHeader);
                         padding: 20px;
                         gap: 20px;
+                        opacity: 0.9;
                 }
                 .strato {
                         height: 70px;

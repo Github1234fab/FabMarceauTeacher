@@ -16,7 +16,7 @@
                 },
                 {
                         title: "2",
-                        paragraph: "J'enseigne sur deux sites géographiques: Lyon 6 et les monts du Lyonnais.",
+                        paragraph: "J'enseigne la Guitare sur deux sites géographiques: Lyon 6 et les monts du Lyonnais.",
                         icon: "icon",
                 },
         ];

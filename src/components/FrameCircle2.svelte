@@ -20,7 +20,10 @@
                 align-items: center;
                 gap: 50px;
                 min-height: 600px;
-        }
+                border: 1px solid var(--CTA);
+                border-radius: 20px;
+                padding: 40px;
+;        }
         .button {
                 display: flex;
                 align-items: center;
@@ -34,6 +37,13 @@
                 min-width: 150px;
                 font-weight: 500;
            
+        }
+        .button:hover {
+                background-color: var(--CTA);
+                transform: scale(1.1);
+        }
+        .button:active {
+               border: 2px solid  lightGrey;
         }
         a {
                 text-decoration: none;
