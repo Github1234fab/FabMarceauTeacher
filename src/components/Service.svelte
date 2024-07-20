@@ -41,7 +41,8 @@
 <style>
         .service {
                 display: flex;
-                height: calc(100vh + 600px);
+                height: auto;
+                /* height: calc(100vh + 600px); */
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
@@ -56,6 +57,7 @@
                 justify-content: center;
                 gap: 20px;
                 margin-bottom: 20px;
+                margin-top: 100px;
         }
         .blob {
                 position: absolute;
@@ -108,7 +110,8 @@
              @media screen and (max-width: 1440px) {
                 .service {
                         display: flex;
-                        height: 1100px;
+                        /* height: 1100px; */
+                        height: auto;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
@@ -120,7 +123,8 @@
         @media screen and (max-width: 1024px) {
                 .service {
                         display: flex;
-                        height: 1100px;
+                        /* height: 1100px; */
+                        height: auto;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
@@ -137,7 +141,8 @@
                 }
                 .service {
                         display: flex;
-                        height: 2000px;
+                        height: auto;
+                        /* height: 2000px; */
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
@@ -172,7 +177,8 @@
         }
         @media screen and (max-width: 425px) {
                   .service {
-                        height: 1900px;
+                        /* height: 1900px; */
+                        height: auto;
                 } 
         }
 </style>

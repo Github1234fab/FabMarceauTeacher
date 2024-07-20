@@ -1,5 +1,5 @@
 <script>
-        import Concert from "../assets/concert.jpg";
+        import Concert from "../assets/Cours-guitare-concert.jpg";
 </script>
 
 <section class="social">
@@ -29,7 +29,6 @@
                 align-items: center;
                 justify-content: center;
                 width: 100%;
-                /* padding-bottom: 56.25%;  */
                 height: 500px;
                 overflow: hidden;
         }
@@ -46,7 +45,8 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                height: calc(100vh + 500px);
+                height: auto;
+                /* height: calc(100vh + 500px); */
                 gap: 50px;
                 padding: 50px;
                 background-color: var(--CTA);
@@ -80,8 +80,8 @@
         }
         .concert {
                 border-radius: 10px;
-                width: 500px;
-                height: 300px;
+                width: 380px;
+                height: 350px;
                 box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.259);
         }
 
@@ -126,70 +126,28 @@
                 margin-bottom: 50px;
         }
 
-        @media screen and (max-width: 1200px) {
-                .wrapper-video,
-                .wrapper-img {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        gap: 20px;
-                }
-                .wrapper-video p,
-                .wrapper-img p {
-                        font-size: 1rem;
-                        font-weight: 500;
-                        line-height: 25px;
-                        color: white;
-                        width: 60%;
-                        text-align: center;
-                }
+        @media screen and (max-width: 1440px) {
                 .social {
                         padding: 20px;
-                         height: 2500px;
-                }
-                .wrapper-text {
-                        width: 80%;
-                }
-                .iframe {
-                        height: 80%;
-                        width: 80%;
-                        left: 100px;
+                        /* height: calc(100vh + 900px); */
+                        height: auto;
                 }
                 .concert {
-                        max-width: 400px;
-                        min-height: 180px;
-                }
-
-                .wrapper-position-A {
-                        grid-column: 1;
-                        grid-row: 1;
-                }
-                .wrapper-position-B {
-                        grid-column: 1;
-                        grid-row: 2;
-                }
-                .wrapper-media {
-                        display: flex;
-                        flex-direction: column;
-                        margin-top: 20px;
-                        padding: 30px;
-                        gap: 50px;
+                        width: 380px;
+                        height: 350px;
                 }
         }
-
-                @media screen and (max-width: 1440px) {
-                        .social {
+        @media screen and (max-width: 1024px) {
+                .social {
                         padding: 20px;
-                        height: calc(100vh + 900px);
-                }  
+                        /* height: calc(100vh + 1100px); */
+                        height: auto;
                 }
-                   @media screen and (max-width: 1024px) {
-                        .social {
-                        padding: 20px;
-                        height: calc(100vh + 1100px);
-                }  
+                .concert {
+                        width: 380px;
+                        height: 350px;
                 }
+        }
         @media screen and (max-width: 810px) {
                 .wrapper-video,
                 .wrapper-img {
@@ -210,14 +168,16 @@
                 }
                 .social {
                         padding: 20px;
-                        height: calc(100vh + 800px);
+                        height: auto;
+                        /* min-height: auto; */
+                        /* height: calc(100vh + 800px); */
                 }
                 .wrapper-text {
                         width: 80%;
                 }
                 .concert {
-                        max-width: 300px;
-                        max-height: 40px;
+                        width: 280px;
+                        height: 250px;
                 }
 
                 .wrapper-position-A {
@@ -236,10 +196,10 @@
                         gap: 50px;
                 }
         }
-          @media screen and (max-width: 425px) {
-                  .social {
-                       
-                        height: calc(100vh + 1300px);
+        @media screen and (max-width: 425px) {
+                .social {
+                        /* height: calc(100vh + 1300px); */
+                       height: auto;
                 }
         }
 </style>
