@@ -20,10 +20,10 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
-                height: calc(100vh + 100px);
+                height: auto;
                 align-items: center;
                 justify-content: center;
-                padding: 50px;
+                padding: 200px;
                 /* padding: 50px; */
         }
         .wrapper-text {
@@ -50,18 +50,18 @@
         }
         .hero h2 {
                 font-size: 1.5rem;
-                font-weight: 300;
+                font-weight: 600;
                 line-height: 25px;
         }
-          .hero h2 span {
+        .hero h2 span {
                 font-weight: 700;
                 color: white;
         }
         .hero p {
                 line-height: 25px;
-                font-weight: 200;
+                font-weight: 400;
         }
-      
+
         .button {
                 display: flex;
                 align-items: center;
@@ -70,42 +70,40 @@
                 margin-top: 25px;
         }
 
-      @media screen and (max-width: 1024px) {
-         .hero {
-                        height: calc(100vh + 300px);
+        @media screen and (max-width: 1024px) {
+                .hero {
                         align-items: center;
                         justify-content: center;
                         padding: 30px;
                 }
-      }
+        }
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 768px) {
                 .hero {
-                        height: calc(100vh + 400px);
+                        height: auto;
                         align-items: center;
                         justify-content: center;
-                        padding: 30px;
+                        padding: 100px;
                 }
                 .wrapper-text {
                         margin-left: 0px;
-                        margin-top: 150px;
-                        min-height: 40%;
+                        margin-top: 230px;
                         border-radius: 50px;
-                        width: 100%;
+                        min-width: 300px;
+                        min-height: auto;
                 }
 
                 .hero h1 {
-                        font-size: 2.4rem;
-                        flex: 1 1 auto;
-                        letter-spacing: -0.3;
+                        font-size: 1.5rem;
+                        letter-spacing: -0.1rem;
                 }
                 .hero h2 {
-                        font-size: 1.2rem;
-                        flex: 1 1 auto;
+                        font-size: 1rem;
+          
                 }
                 .hero p {
                         font-size: 0.9rem;
-                        flex: 1 1 auto;
+
                 }
         }
 </style>

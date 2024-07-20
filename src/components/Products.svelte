@@ -82,9 +82,9 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                height: calc(100vh + 100px);
+                height: auto;
                 gap: 80px;
-                padding: 100px;
+                padding: 200px;
                 background: radial-gradient(rgb(109, 109, 212), rgb(10, 10, 105));
                 z-index: 0;
         }
@@ -136,10 +136,8 @@
         }
 
         @media screen and (max-width: 1440px) {
-                .products {
-                        height:  calc(100vh + 700px);
-                }
-                       .wrapper-cardB, .wrapper-cardA {
+                .wrapper-cardB,
+                .wrapper-cardA {
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -147,13 +145,10 @@
                         gap: 40px;
                         width: 60%;
                 }
-          
         }
-                @media screen and (max-width: 1184px) {
-                .products {
-                        height:  calc(100vh + 1150px);
-                }
-                       .wrapper-cardB, .wrapper-cardA {
+        @media screen and (max-width: 1184px) {
+                .wrapper-cardB,
+                .wrapper-cardA {
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -161,14 +156,11 @@
                         gap: 40px;
                         width: 60%;
                 }
-          
         }
 
         @media screen and (max-width: 860px) {
-                .products {
-                        height:1650px
-                }
-                         .wrapper-cardB, .wrapper-cardA {
+                .wrapper-cardB,
+                .wrapper-cardA {
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -176,13 +168,11 @@
                         gap: 40px;
                         width: 90%;
                 }
-          
         }
 
         @media screen and (max-width: 768px) {
-                .products {
-                        padding: 50px;
-                        height: 3000px;
+                 .products {
+                        padding: 100px;
                 }
                 .wrapper-competence-value {
                         display: flex;
@@ -207,4 +197,5 @@
                         line-height: 25px;
                 }
         }
+     
 </style>

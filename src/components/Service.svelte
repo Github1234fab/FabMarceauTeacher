@@ -47,7 +47,7 @@
                 align-items: center;
                 justify-content: center;
                 gap: 100px;
-                padding: 50px;
+                padding: 200px;
                 background-color: var(--bgSectionA);
         }
         .wrapper-text {
@@ -107,47 +107,47 @@
                 margin-top: 100px;
                 margin-bottom: 50px;
         }
-             @media screen and (max-width: 1440px) {
+        @media screen and (max-width: 1440px) {
                 .service {
                         display: flex;
-                        /* height: 1100px; */
+
                         height: auto;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
                         gap: 70px;
-                        padding: 50px;
+
                         background-color: var(--bgSectionA);
                 }
         }
         @media screen and (max-width: 1024px) {
                 .service {
                         display: flex;
-                        /* height: 1100px; */
+
                         height: auto;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
                         gap: 70px;
-                        padding: 50px;
+
                         background-color: var(--bgSectionA);
                 }
         }
         @media screen and (max-width: 768px) {
-                .blob{
-                        height: 350px;
-                        top: -110px;
-                        left: -76px;
+                .blob {
+                        height: 450px;
+                        top: -170px;
+                        left: -126px;
                 }
                 .service {
                         display: flex;
                         height: auto;
-                        /* height: 2000px; */
+                        padding: 100px;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
                         gap: 70px;
-                        padding: 50px;
+
                         background-color: var(--bgSectionA);
                 }
                 .wrapper-text {
@@ -175,10 +175,17 @@
                         min-width: 200px;
                 }
         }
-        @media screen and (max-width: 425px) {
-                  .service {
-                        /* height: 1900px; */
-                        height: auto;
-                } 
+        @media screen and (max-width: 428px) {
+                .blob {
+                        height: 350px;
+                        top: -120px;
+                        left: -80px;
+                }
+                .tarif h1 {
+                        font-size: 1.2rem;
+                }
+                .tarif h2 {
+                        font-size: 1rem;
+                }
         }
 </style>

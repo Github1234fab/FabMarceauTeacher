@@ -2,7 +2,6 @@
         import { onMount } from "svelte";
         import StratoOne from "../assets/stratocastorOne.png";
         let header;
-        let menu;
         let windowWidth;
 
         let scrollTimeout;
@@ -17,7 +16,7 @@
                 clearTimeout(scrollTimeout);
                 scrollTimeout = setTimeout(() => {
                         header.classList.remove("sticky");
-                }, 300);
+                }, 900);
         }
         onMount(() => {
                 if (typeof window !== "undefined") {

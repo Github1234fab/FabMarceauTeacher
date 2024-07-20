@@ -23,12 +23,13 @@
 <style>
         .reservation {
                 display: flex;
-                height: calc(100vh );
+                /* height: calc(100vh ); */
+                height: auto;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 gap: 100px;
-                padding: 50px;
+                padding: 200px;
                 background-color: white;
         }
 

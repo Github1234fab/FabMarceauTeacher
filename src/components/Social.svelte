@@ -8,17 +8,17 @@
                 <p>Ma passion pour la musique et la pédagogie m'a conduit en 2009 à créer l'École de musique issétys. Aujourd'hui l'école de musique Issétys enseigne la guitare, le piano, la basse, le chant, le ukulélé et la batterie.</p>
         </div>
         <div class="wrapper-media">
-                <div class="wrapper-video wrapper-position-A">
-                        <h2>Directeur - fondateur <br />de L'école de Musique <span>ISSÉTYS Lyon 6</span></h2>
+                <div class="wrapper-video">
+                        <h2>Directeur - fondateur de L'école de Musique <span>ISSÉTYS Lyon 6</span></h2>
                         <div class="iframe-container">
                                 <iframe class="iframe" title="interview Issetys ecole de musique" src="https://www.youtube.com/embed/yH6rYXOxqQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
                         </div>
                         <p>Ma mère était institutrice et m'a donné cette passion pour la pédagogie. C'est un bonheur de former chaque jour des musiciens, depuis 17 ans. Ils témoignent ici, lors d'un reportage tourné à l'école de musique Issétys.</p>
                 </div>
-                <div class="wrapper-img wrapper-position-B">
+                <div class="wrapper-img">
                         <h2>Formateur et <span>Professeur</span></h2>
                         <img src={Concert} alt="" class="concert" />
-                        <p>Enseigner, transmettre au plus expérimentés comme à ceux qui n'ont jamais pratiqué. Enseigner aux adultes, comme aux enfants. Chaque élève a un profil différent.</p>
+                        <p>Enseigner, transmettre aux plus expérimentés comme à ceux qui n'ont jamais pratiqué. Enseigner aux adultes, comme aux enfants. Chaque élève a un profil différent et ce qui compte c'est de s'adapter à chaque profil. À son profil d'apprentissage, ses aptitudes, sa motivation, ses envies, ses besoins, son planning, (...).</p>
                 </div>
         </div>
 </section>
@@ -48,7 +48,7 @@
                 height: auto;
                 /* height: calc(100vh + 500px); */
                 gap: 50px;
-                padding: 50px;
+                padding: 200px;
                 background-color: var(--CTA);
         }
         .wrapper-text {
@@ -78,6 +78,16 @@
                 color: white;
                 text-align: center;
         }
+        .wrapper-media {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 50px;
+                padding: 30px;
+                margin-bottom: 50px;
+                gap: 40px;
+        }
         .concert {
                 border-radius: 10px;
                 width: 380px;
@@ -85,15 +95,6 @@
                 box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.259);
         }
 
-        .wrapper-media {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: auto;
-                margin-top: 50px;
-                padding: 30px;
-                margin-bottom: 50px;
-                gap: 40px;
-        }
         .wrapper-img h2 span,
         .wrapper-video h2 span {
                 color: white;
@@ -103,8 +104,8 @@
         .wrapper-img {
                 display: flex;
                 flex-direction: column;
-                align-items: left;
-                justify-content: left;
+                align-items: center;
+                justify-content: center;
                 gap: 20px;
         }
         .wrapper-video p,
@@ -116,20 +117,13 @@
                 width: 90%;
                 text-align: left;
         }
-        .wrapper-position-A {
-                grid-column: 1;
-                grid-row: 1;
-        }
-        .wrapper-position-B {
-                grid-column: 2;
-                grid-row: 2;
-                margin-bottom: 50px;
+        .wrapper-img {
+                margin-top: 200px;
         }
 
         @media screen and (max-width: 1440px) {
                 .social {
                         padding: 20px;
-                        /* height: calc(100vh + 900px); */
                         height: auto;
                 }
                 .concert {
@@ -140,7 +134,7 @@
         @media screen and (max-width: 1024px) {
                 .social {
                         padding: 20px;
-                        /* height: calc(100vh + 1100px); */
+
                         height: auto;
                 }
                 .concert {
@@ -169,8 +163,6 @@
                 .social {
                         padding: 20px;
                         height: auto;
-                        /* min-height: auto; */
-                        /* height: calc(100vh + 800px); */
                 }
                 .wrapper-text {
                         width: 80%;
@@ -180,14 +172,6 @@
                         height: 250px;
                 }
 
-                .wrapper-position-A {
-                        grid-column: 1;
-                        grid-row: 1;
-                }
-                .wrapper-position-B {
-                        grid-column: 1;
-                        grid-row: 2;
-                }
                 .wrapper-media {
                         display: flex;
                         flex-direction: column;
@@ -198,8 +182,7 @@
         }
         @media screen and (max-width: 425px) {
                 .social {
-                        /* height: calc(100vh + 1300px); */
-                       height: auto;
+                        height: auto;
                 }
         }
 </style>

@@ -6,9 +6,8 @@
         <h1>Visez le meilleur, choisissez la <span>passion</span> et <span>l'expérience.</span></h1>
         <div class="wrapper">
                 <p>Apprendre, se perfectionner, progresser, découvrir. Quoi de mieux que d'être accompagné par un professionnel . C'est l'occasion de bénéficier d'une grande expertise et de poser toutes vos questions, d'aborder tout ce que vous voulez en étant accompagné, dans la bienveillance et la bonne humeur!</p>
-                        <Button />
+                <Button />
         </div>
-
 </section>
 
 <style>
@@ -18,14 +17,14 @@
                 align-items: center;
                 justify-content: center;
                 background-image: url("../assets/FabienMarceauB.jpg");
-                background-position: top;
+                background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
                 height: auto;
                 gap: 50px;
                 background-color: var(--bgSectionB);
-                height: 1200px;
-                padding: 50px;
+                height: auto;
+                padding: 200px;
         }
         .CTA h1 {
                 font-size: 2rem;
@@ -33,7 +32,7 @@
                 color: white;
                 margin-top: 400px;
         }
-        .CTA h1 span{
+        .CTA h1 span {
                 color: var(--CTA);
         }
         .CTA p {
@@ -53,10 +52,12 @@
         @media screen and (max-width: 768px) {
                 .wrapper {
                         border-radius: 20px;
+                        min-height: auto;
+                        min-width: 300px;
                 }
                 .CTA{
-                                 height: calc(100vh + 650px);
-                                 height: 1300px;
+                        padding: 100px;
                 }
+          
         }
 </style>
