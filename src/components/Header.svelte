@@ -107,8 +107,8 @@
         header {
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                height: 80px;
+                justify-content: space-between;
+                min-height: auto;
                 background-color: var(--bgHeader);
                 padding: 20px;
                 position: fixed;
@@ -142,6 +142,7 @@
                 justify-content: center;
                 font-size: 1rem;
                 gap: 20px;
+                margin-right: 3%;
         }
 
         .menu a,
