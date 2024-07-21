@@ -1,16 +1,20 @@
 <script>
         import { onMount } from "svelte";
         import StratoOne from "../assets/stratocastorOne.png";
+        import MenuIcon from "../assets/bars-solid.svg";
+        import { fade, slide } from "svelte/transition";
+
         let header;
         let windowWidth;
-
         let scrollTimeout;
+        let burgerMenuOpen = false;
 
         // Fonction pour mettre à jour la largeur de la fenêtre
         function updateWidth() {
                 windowWidth = window.innerWidth;
         }
 
+        // Fonction pour gérer le scroll
         function handleScroll() {
                 header.classList.add("sticky");
                 clearTimeout(scrollTimeout);
@@ -18,13 +22,18 @@
                         header.classList.remove("sticky");
                 }, 900);
         }
+
+        // Fonction pour ouvrir/fermer le menu burger
+        function toggleBurgerMenu() {
+                burgerMenuOpen = !burgerMenuOpen;
+        }
+
         onMount(() => {
                 if (typeof window !== "undefined") {
                         window.addEventListener("scroll", handleScroll);
+                        window.addEventListener("resize", updateWidth);
+                        updateWidth(); // Initialisation de la largeur
                 }
-
-                window.addEventListener("resize", updateWidth);
-                updateWidth(); // Initialisation de la largeur
 
                 // Nettoyage lors de la destruction du composant
                 return () => {
@@ -40,7 +49,22 @@
         <div class="sticky hidden header-big-height"></div>
         <div class="menu-vertical hidden"></div>
 
-        <div class:menu-vertical={windowWidth < 450} class="menu">
+        <!-- Icone Menu Burger -->
+        <button on:click={toggleBurgerMenu}><img src={MenuIcon} alt="" /></button>
+
+        <!-- Menu Burger -->
+        {#if burgerMenuOpen}
+                <div class="burger-menu slide-in" transition:fade={{ duration: 600 }}>
+                        <a href="#cours_de_guitare">Cours</a>
+                        <a href="#Tarifs">Tarifs</a>
+                        <a href="#reservation">Réservation</a>
+                        <a href="#A_propos">Profil</a>
+                        <a href="#Contact">Contact</a>
+                </div>
+        {/if}
+
+        <!-- Menu Traditionnel -->
+        <div class="menu">
                 <a href="#cours_de_guitare">Cours</a>
                 <a href="#Tarifs">Tarifs</a>
                 <a href="#reservation">Réservation</a>
@@ -50,29 +74,59 @@
 </header>
 
 <style>
+        button {
+                display: flex;
+                height: 40px;
+                width: 40px;
+                margin-left: calc(100vw - 30%);
+                z-index: 4;
+                background-color: transparent;
+                border: none;
+                display: none;
+                position: relative;
+        }
+
+        .burger-menu {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
+                gap: 15px;
+                position: absolute;
+                border-radius: 20px;
+                top: 90px;
+                left: 80%;
+                padding: 20px;
+                width: auto;
+                z-index: 0;
+                background-color: var(--bgHeader);
+      
+        }
+ 
         header {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: center;
                 height: 80px;
                 background-color: var(--bgHeader);
                 padding: 20px;
                 position: fixed;
                 width: 100vw;
-                z-index: 3;
+                z-index: 0;
                 transition: opacity 0.8s ease-in-out;
         }
+
         .sticky {
                 opacity: 0;
                 transition: 0.3s ease-in-out;
         }
-        .hidden {
-                display: none;
-        }
+
         .strato {
                 margin-left: -30px;
                 height: 70px;
         }
+
         .container-strat {
                 display: flex;
                 align-items: left;
@@ -89,45 +143,30 @@
                 font-size: 1rem;
                 gap: 20px;
         }
-        .hidden {
-                display: none;
-        }
 
-        .menu-vertical {
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                font-size: 1rem;
-                gap: 6px;
-        }
-        .menu a {
+        .menu a,
+        .burger-menu a {
                 text-decoration: none;
-                color: white;
                 color: white;
                 font-weight: 400;
                 font-size: 1rem;
                 transition: 0.4s ease-in-out;
         }
-        .menu a:hover {
+
+        .menu a:hover,
+        .burger-menu a:hover {
                 color: var(--CTA);
         }
 
-        @media screen and (max-width: 450px) {
-                header {
-                        height: 250px;
+        @media screen and (max-width: 768px) {
+                .menu {
+                        display: none;
+                }
+                .burger-menu {
                         display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        background-color: var(--bgHeader);
-                        padding: 20px;
-                        gap: 20px;
-                        opacity: 0.9;
                 }
-                .strato {
-                        height: 70px;
-                        margin-left: 3px;
+                button {
+                        display: flex;
                 }
-           
         }
 </style>

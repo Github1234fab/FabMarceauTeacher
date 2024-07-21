@@ -64,7 +64,9 @@
                         <p>Bonne Humeur</p>
                 </div>
         </div>
+               <h1>Matières enseignées</h1>
         <div class="wrapper-cardA">
+              
                 {#each tabA as info}
                         <Card title={info.title} />
                 {/each}
@@ -171,7 +173,7 @@
         }
 
         @media screen and (max-width: 768px) {
-                 .products {
+                .products {
                         padding: 100px;
                 }
                 .wrapper-competence-value {
@@ -197,5 +199,4 @@
                         line-height: 25px;
                 }
         }
-     
 </style>

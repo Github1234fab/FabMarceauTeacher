@@ -17,6 +17,6 @@
 <Social /> 
 <Resa />
 <CTA />
-<!-- <Formulaire /> -->
+<Formulaire />
 
 
