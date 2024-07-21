@@ -64,7 +64,7 @@
                         <p>Bonne Humeur</p>
                 </div>
         </div>
-               <h1>Matières enseignées</h1>
+               <h1 class="matière">Matières enseignées</h1>
         <div class="wrapper-cardA">
               
                 {#each tabA as info}
@@ -94,6 +94,9 @@
                 font-weight: 800;
                 color: var(--white);
                 font-size: 2rem;
+        }
+        .matière{
+                text-align: center;
         }
         .products p {
                 font-weight: 400;

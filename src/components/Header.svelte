@@ -20,7 +20,7 @@
                 clearTimeout(scrollTimeout);
                 scrollTimeout = setTimeout(() => {
                         header.classList.remove("sticky");
-                }, 900);
+                }, 560);
         }
 
         // Fonction pour ouvrir/fermer le menu burger
@@ -76,8 +76,8 @@
 <style>
         button {
                 display: flex;
-                height: 40px;
-                width: 40px;
+                height: 35px;
+                width: 35px;
                 margin-left: calc(100vw - 30%);
                 z-index: 4;
                 background-color: transparent;
@@ -95,8 +95,8 @@
                 gap: 15px;
                 position: absolute;
                 border-radius: 20px;
-                top: 90px;
-                left: 80%;
+                top: 120px;
+                left: 60%;
                 padding: 20px;
                 width: auto;
                 z-index: 0;
@@ -168,6 +168,7 @@
                 }
                 button {
                         display: flex;
+                        margin-left: calc(100vw - 40%);
                 }
         }
 </style>
