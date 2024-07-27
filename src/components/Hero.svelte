@@ -16,15 +16,13 @@
                 display: flex;
                 background-color: #49494c;
                 color: white;
-                background-image: url("../assets/coursdeguitare.jpg");
+                background-image: url("../assets/guitareCanape.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-position: center;
-                height: auto;
-                align-items: center;
+                min-height: auto;
+                align-items: bottom;
                 justify-content: center;
                 padding: 200px;
-                /* padding: 50px; */
         }
         .wrapper-text {
                 display: flex;
@@ -33,7 +31,7 @@
                 justify-content: flex-start;
                 gap: 20px;
                 margin-top: 350px;
-                background-color: #49494cc3;
+                background-color: #2d0b07c3;
                 padding: 50px;
                 border-radius: 10px 200px 80px 100px;
                 margin-bottom: 40px;
@@ -80,14 +78,16 @@
 
         @media screen and (max-width: 768px) {
                 .hero {
-                        height: auto;
+                        max-height: 650px;
                         align-items: center;
                         justify-content: center;
                         padding: 100px;
+                           background-position: top;
                 }
                 .wrapper-text {
                         margin-left: 0px;
-                        margin-top: 230px;
+                        margin-top: 140px;
+                        margin-bottom: 20px;
                         border-radius: 50px;
                         min-width: 300px;
                         min-height: auto;

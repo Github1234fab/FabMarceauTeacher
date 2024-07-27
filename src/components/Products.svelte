@@ -94,6 +94,7 @@
                 font-weight: 800;
                 color: var(--white);
                 font-size: 2rem;
+                text-align: center;
         }
         .matière{
                 text-align: center;
@@ -104,7 +105,7 @@
                 line-height: 25px;
                 text-align: center;
                 margin-top: -30px;
-                text-align: left;
+                text-align: center;
         }
         .wrapper-cardA {
                 margin-top: 30px;

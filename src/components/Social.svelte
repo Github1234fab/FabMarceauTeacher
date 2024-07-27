@@ -4,38 +4,31 @@
 
 <section class="social">
         <div class="wrapper-text">
-                <h1>Directeur, Formateur, <span>Professeur</span></h1>
-                <p>Ma passion pour la musique et la pédagogie m'a conduit en 2009 à créer l'École de musique issétys. Aujourd'hui l'école de musique Issétys enseigne la guitare, le piano, la basse, le chant, le ukulélé et la batterie.</p>
+                <h1>Fabien Marceau<br /><span>Directeur, Formateur, Professeur</span></h1>
+                <p>J'ai créé l'école de musique ISSÉTYS en 2009. J'ai formé de nombreux professeurs à une pédagogie nouvelle et dépoussiérée. L'école de musique Issétys enseigne la guitare, le piano, la basse, le chant, le ukulélé et la batterie.</p>
         </div>
         <div class="wrapper-media">
                 <div class="wrapper-video">
-                        <h2>Directeur - fondateur de L'école de Musique <span>ISSÉTYS Lyon 6</span></h2>
-                        <div class="iframe-container">
-                                <iframe class="iframe" title="interview Issetys ecole de musique" src="https://www.youtube.com/embed/yH6rYXOxqQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
-                        </div>
-                        <p>Ma mère était institutrice et m'a donné cette passion pour la pédagogie. C'est un bonheur de former chaque jour des musiciens, depuis 17 ans. Ils témoignent ici, lors d'un reportage tourné à l'école de musique Issétys.</p>
+                        <!-- <div class="iframe-container"> -->
+                        <h2>Interview des élèves et du directeur de <span> l'école de musique, ISSÉTYS-Lyon 6</span></h2>
+                        <iframe class="iframe" title="interview Issetys ecole de musique" src="https://www.youtube.com/embed/yH6rYXOxqQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+                        <!-- </div> -->
+                        <!-- <p>Ma mère était institutrice et m'a donné cette passion pour la pédagogie. C'est un bonheur de former chaque jour des musiciens, depuis 17 ans. Ils témoignent ici, lors d'un reportage tourné à l'école de musique Issétys.</p> -->
                 </div>
                 <div class="wrapper-img">
-                        <h2>Formateur et <span>Professeur</span></h2>
+                        <h2>Fabien Marceau, <span>Formateur et Professeur</span></h2>
                         <img src={Concert} alt="" class="concert" />
-                        <p>Enseigner, transmettre aux plus expérimentés comme à ceux qui n'ont jamais pratiqué. Enseigner aux adultes, comme aux enfants. Chaque élève a un profil différent et ce qui compte c'est de s'adapter à chaque profil. À son profil d'apprentissage, ses aptitudes, sa motivation, ses envies, ses besoins, son planning, (...).</p>
+                        <!-- <p>Enseigner, transmettre aux plus expérimentés comme à ceux qui n'ont jamais pratiqué. Enseigner aux adultes, comme aux enfants. Chaque élève a un profil différent et ce qui compte c'est de s'adapter à chaque profil. À son profil d'apprentissage, ses aptitudes, sa motivation, ses envies, ses besoins, son planning, (...).</p> -->
+                        <p>Concert des élèves Issétys, 06/2024</p>
                 </div>
         </div>
 </section>
 
 <style>
-        .iframe-container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                height: 500px;
-                overflow: hidden;
-        }
         .iframe {
                 justify-content: center;
                 align-self: center;
-                width: 100%;
+                width: 45%;
                 height: 100%;
                 border-radius: 10px;
                 box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.259);
@@ -64,6 +57,7 @@
                 font-size: 2rem;
                 font-weight: 800;
                 color: white;
+                text-align: center;
         }
         .social h1 span {
                 font-size: 2rem;
@@ -73,7 +67,7 @@
 
         .social p {
                 font-size: 1rem;
-                font-weight: 300;
+                font-weight: 600;
                 line-height: 25px;
                 color: white;
                 text-align: center;
@@ -106,19 +100,28 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                width: 100vw;
+                height: 500px;
                 gap: 20px;
+                padding: 10px;
         }
-        .wrapper-video p,
-        .wrapper-img p {
-                font-size: 1rem;
-                font-weight: 500;
+        .wrapper-video h2,
+        .wrapper-img h2 {
+                font-size: 1.2rem;
+                font-weight: 700;
                 line-height: 25px;
                 color: white;
                 width: 90%;
-                text-align: left;
+                text-align: center;
         }
-        .wrapper-img {
-                margin-top: 200px;
+        .wrapper-video h2 span,
+        .wrapper-img h2 span {
+                font-size: 1.2rem;
+                font-weight: 700;
+                line-height: 25px;
+                color: rgb(33, 33, 33);
+                width: 90%;
+                text-align: center;
         }
 
         @media screen and (max-width: 1440px) {
@@ -134,7 +137,6 @@
         @media screen and (max-width: 1024px) {
                 .social {
                         padding: 20px;
-
                         height: auto;
                 }
                 .concert {
@@ -143,23 +145,11 @@
                 }
         }
         @media screen and (max-width: 810px) {
-                .wrapper-video,
-                .wrapper-img {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: centert;
-                        justify-content: center;
-                        gap: 20px;
+                .iframe {
+                        width: 95%;
+                        height: 100%;
                 }
-                .wrapper-video p,
-                .wrapper-img p {
-                        font-size: 1rem;
-                        font-weight: 600;
-                        line-height: 25px;
-                        color: white;
-                        width: 80%;
-                        text-align: center;
-                }
+
                 .social {
                         padding: 20px;
                         height: auto;
@@ -175,9 +165,8 @@
                 .wrapper-media {
                         display: flex;
                         flex-direction: column;
-                        margin-top: 20px;
                         padding: 30px;
-                        gap: 50px;
+                        gap: 0px;
                 }
         }
         @media screen and (max-width: 425px) {
