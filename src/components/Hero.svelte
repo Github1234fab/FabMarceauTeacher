@@ -31,17 +31,18 @@
                 justify-content: flex-start;
                 gap: 20px;
                 margin-top: 350px;
-                background-color: #2d0b07c3;
+                background-color: #eee9e9ea;
                 padding: 50px;
                 border-radius: 10px 200px 80px 100px;
                 margin-bottom: 40px;
-                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.486);
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.327);
         }
         .hero h1 {
                 font-family: "inter";
                 letter-spacing: -0.2rem;
                 font-size: 4.5rem;
                 font-weight: 700;
+                color: var(--bgHeader);
         }
         .hero span {
                 color: var(--CTA);
@@ -50,14 +51,16 @@
                 font-size: 1.5rem;
                 font-weight: 600;
                 line-height: 25px;
+                 color: var(--bgHeader);
         }
         .hero h2 span {
                 font-weight: 700;
-                color: white;
+                color: var(--CTA);
         }
         .hero p {
                 line-height: 25px;
                 font-weight: 400;
+                color: grey;
         }
 
         .button {
