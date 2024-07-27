@@ -6,8 +6,8 @@
         import FrameCircle2 from "./FrameCircle2.svelte";
         let tabReservation = [
                 { icon: Calendar, title: "Réservez", paragraph: "Pour réservez votre cours, c'est simple! Vous réservez votre créneau en cliquant sur le bouton 'Je réserve'.", button: "Je réserve", lien: "https://doodle.com/bp/fabienmarceau1/rservez-votre-cours-de-guitare-domicile" },
-                { icon: Check, title: "Checkez", paragraph: "Vous recevez ensuite un mail de validation de créneau que vous allez confirmer à votre tour", button: "Je valide" },
-                { icon: CreditCard, title: "Payer", paragraph: "Une fois votre créneau validé, il ne vous reste plus qu'à procéder au paiement de votre cours en ligne et vous tenir prêt pour votre cours de Guitare", button: "Je paie" , lien:"https://buy.stripe.com/6oEg2y0v7gde2Pe7ss"},
+                { icon: Check, title: "Checkez", paragraph: "Vous recevez ensuite un mail de validation de créneau que vous allez confirmer à votre tour", button: "Je valide", lien: "mailto:fabienMarceauPro@gmail.com" },
+                { icon: CreditCard, title: "Payer", paragraph: "Une fois votre créneau validé, il ne vous reste plus qu'à procéder au paiement de votre cours en ligne et vous tenir prêt pour votre cours de Guitare", button: "Je paie", lien: "https://buy.stripe.com/6oEg2y0v7gde2Pe7ss" },
         ];
 </script>
 
@@ -52,7 +52,7 @@
                 margin-bottom: 50px;
         }
 
-                @media screen and (max-width: 1440px){
+        @media screen and (max-width: 1440px) {
                 .reservation {
                         display: flex;
                         height: 1000px;
@@ -61,13 +61,13 @@
                         justify-content: center;
                         gap: 70px;
                         padding: 50px;
-                        background-color: var(--bgSectionA);    
+                        background-color: var(--bgSectionA);
                 }
         }
         @media screen and (max-width: 1024px) {
                 .reservation {
                         display: flex;
-                           height: 2600px;
+                        height: 2600px;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
