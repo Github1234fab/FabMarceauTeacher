@@ -15,8 +15,8 @@
 <About />
 <Service /> 
 <Social /> 
-<Resa />
-<CTA />
+ <Resa />
+<CTA /> 
 <Formulaire />
 
 

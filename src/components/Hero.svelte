@@ -54,8 +54,8 @@
                  color: var(--bgHeader);
         }
         .hero h2 span {
-                font-weight: 700;
-                color: var(--CTA);
+                font-weight: 900;
+                color: var(--bgHero);
         }
         .hero p {
                 line-height: 25px;

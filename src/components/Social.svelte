@@ -9,17 +9,14 @@
         </div>
         <div class="wrapper-media">
                 <div class="wrapper-video">
-                        <!-- <div class="iframe-container"> -->
-                        <h2>Interview des élèves et du directeur de <span> l'école de musique, ISSÉTYS-Lyon 6</span></h2>
-                        <iframe class="iframe" title="interview Issetys ecole de musique" src="https://www.youtube.com/embed/yH6rYXOxqQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
-                        <!-- </div> -->
-                        <!-- <p>Ma mère était institutrice et m'a donné cette passion pour la pédagogie. C'est un bonheur de former chaque jour des musiciens, depuis 17 ans. Ils témoignent ici, lors d'un reportage tourné à l'école de musique Issétys.</p> -->
+                        <h2>Interview de l'école de musique, ISSÉTYS-Lyon 6</h2>
+                         <iframe class="iframe" title="interview Issetys ecole de musique" src="https://www.youtube.com/embed/yH6rYXOxqQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe> 
+                  
                 </div>
                 <div class="wrapper-img">
-                        <h2>Fabien Marceau, <span>Formateur et Professeur</span></h2>
-                        <img src={Concert} alt="" class="concert" />
-                        <!-- <p>Enseigner, transmettre aux plus expérimentés comme à ceux qui n'ont jamais pratiqué. Enseigner aux adultes, comme aux enfants. Chaque élève a un profil différent et ce qui compte c'est de s'adapter à chaque profil. À son profil d'apprentissage, ses aptitudes, sa motivation, ses envies, ses besoins, son planning, (...).</p> -->
-                        <p>Concert des élèves Issétys, 06/2024</p>
+                        <h2>Concert des élèves Issétys, 06/2024</h2>
+             <img src={Concert} alt="" class="concert" /> 
+              
                 </div>
         </div>
 </section>
@@ -28,8 +25,8 @@
         .iframe {
                 justify-content: center;
                 align-self: center;
-                width: 45%;
-                height: 100%;
+                  width: auto;
+                height: 57%;
                 border-radius: 10px;
                 box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.259);
         }
@@ -39,9 +36,7 @@
                 align-items: center;
                 justify-content: center;
                 height: auto;
-                /* height: calc(100vh + 500px); */
-                gap: 50px;
-                padding: 200px;
+                padding: 50px;
                 background-color: var(--CTA);
         }
         .wrapper-text {
@@ -50,8 +45,8 @@
                 align-items: center;
                 justify-content: center;
                 gap: 20px;
-                width: 60%;
-                margin-top: 50px;
+                width: 100vw;
+                margin-top: 20px;
         }
         .social h1 {
                 font-size: 2rem;
@@ -71,6 +66,7 @@
                 line-height: 25px;
                 color: white;
                 text-align: center;
+                width: 90%;
         }
         .wrapper-media {
                 display: flex;
@@ -78,21 +74,16 @@
                 align-items: center;
                 justify-content: center;
                 margin-top: 50px;
-                padding: 30px;
-                margin-bottom: 50px;
-                gap: 40px;
+                padding: 0px;
         }
         .concert {
                 border-radius: 10px;
-                width: 380px;
-                height: 350px;
+                width: auto;
+                height: 57%;
                 box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.259);
         }
 
-        .wrapper-img h2 span,
-        .wrapper-video h2 span {
-                color: white;
-        }
+    
 
         .wrapper-video,
         .wrapper-img {
@@ -114,64 +105,7 @@
                 width: 90%;
                 text-align: center;
         }
-        .wrapper-video h2 span,
-        .wrapper-img h2 span {
-                font-size: 1.2rem;
-                font-weight: 700;
-                line-height: 25px;
-                color: rgb(33, 33, 33);
-                width: 90%;
-                text-align: center;
-        }
+     
 
-        @media screen and (max-width: 1440px) {
-                .social {
-                        padding: 20px;
-                        height: auto;
-                }
-                .concert {
-                        width: 380px;
-                        height: 350px;
-                }
-        }
-        @media screen and (max-width: 1024px) {
-                .social {
-                        padding: 20px;
-                        height: auto;
-                }
-                .concert {
-                        width: 380px;
-                        height: 350px;
-                }
-        }
-        @media screen and (max-width: 810px) {
-                .iframe {
-                        width: 95%;
-                        height: 100%;
-                }
-
-                .social {
-                        padding: 20px;
-                        height: auto;
-                }
-                .wrapper-text {
-                        width: 80%;
-                }
-                .concert {
-                        width: 280px;
-                        height: 250px;
-                }
-
-                .wrapper-media {
-                        display: flex;
-                        flex-direction: column;
-                        padding: 30px;
-                        gap: 0px;
-                }
-        }
-        @media screen and (max-width: 425px) {
-                .social {
-                        height: auto;
-                }
-        }
+      
 </style>

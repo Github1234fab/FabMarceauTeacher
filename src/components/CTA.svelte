@@ -3,8 +3,8 @@
 </script>
 
 <section class="CTA">
-        <h1>Visez le meilleur, choisissez la <span>passion</span> et <span>l'expérience.</span></h1>
         <div class="wrapper">
+                <h1>Visez le meilleur, choisissez la <span>passion</span> et <span>l'expérience.</span></h1>
                 <p>Apprendre, se perfectionner, progresser, découvrir. Quoi de mieux que d'être accompagné par un professionnel . C'est l'occasion de bénéficier d'une grande expertise et de poser toutes vos questions, d'aborder tout ce que vous voulez en étant accompagné, dans la bienveillance et la bonne humeur!</p>
                 <Button />
         </div>
@@ -14,9 +14,9 @@
         .CTA {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                background-image: url("../assets/FabienMarceauB.jpg");
+                align-items: left;
+                justify-content: left;
+                background-image: url("../assets/0O4A8591.jpg");
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -24,13 +24,14 @@
                 gap: 50px;
                 background-color: var(--bgSectionB);
                 height: auto;
-                padding: 200px;
+                padding: 100px;
         }
         .CTA h1 {
                 font-size: 2rem;
                 font-weight: 800;
                 color: white;
-                margin-top: 400px;
+                margin-top: 2%;
+                margin-bottom: 2%;
         }
         .CTA h1 span {
                 color: var(--CTA);
@@ -47,17 +48,21 @@
                 padding: 50px;
                 border-radius: 10px 200px 80px 100px;
                 max-width: 600px;
+                margin-top: 60%;
         }
 
         @media screen and (max-width: 768px) {
                 .wrapper {
                         border-radius: 20px;
-                        min-height: auto;
+                        height: auto;
                         min-width: 300px;
+                        margin-top: 820px;
                 }
-                .CTA{
-                        padding: 100px;
+                .CTA {
+                        padding: 10px;
+                        height: 1400px;
+                        background-image: url("../assets/FABIEN_MARCEAU_MEDIA.jpg");
+         
                 }
-          
         }
 </style>
