@@ -31,7 +31,7 @@
                 justify-content: flex-start;
                 gap: 20px;
                 margin-top: 350px;
-                background-color: #eee9e9ea;
+                background-color: #eee9e9e7;
                 padding: 50px;
                 border-radius: 10px 200px 80px 100px;
                 margin-bottom: 40px;
@@ -60,7 +60,7 @@
         .hero p {
                 line-height: 25px;
                 font-weight: 400;
-                color: grey;
+                color: black;
         }
 
         .button {

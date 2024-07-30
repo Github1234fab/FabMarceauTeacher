@@ -19,7 +19,7 @@
                 background-image: url("../assets/0O4A8591.jpg");
                 background-position: center;
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size:cover  ;
                 height: auto;
                 gap: 50px;
                 background-color: var(--bgSectionB);
@@ -56,7 +56,7 @@
                         border-radius: 20px;
                         height: auto;
                         min-width: 300px;
-                        margin-top: 820px;
+                        margin-top: 720px;
                 }
                 .CTA {
                         padding: 10px;

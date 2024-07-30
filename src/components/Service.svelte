@@ -101,6 +101,7 @@
         }
         .wrapper-frames-circles {
                 display: flex;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 gap: 50px;
@@ -123,13 +124,11 @@
         @media screen and (max-width: 1024px) {
                 .service {
                         display: flex;
-
                         height: auto;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
                         gap: 70px;
-
                         background-color: var(--bgSectionA);
                 }
         }

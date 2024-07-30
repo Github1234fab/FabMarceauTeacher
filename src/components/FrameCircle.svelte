@@ -17,6 +17,7 @@
                 align-items: center;
                 justify-content: center;
                 gap: 20px;
+                width: 100vw;
         }
 
         .circle {
@@ -42,5 +43,6 @@
                 font-size: 1rem;
                 font-weight: 400;
                 line-height: 25px;
+                width: 90%;
         }
 </style>
