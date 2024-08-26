@@ -1,57 +1,47 @@
 <script>
         import Button from "../components/ButtonCTA.svelte";
+        import Strat from "../assets/stratocastorTwo.png";
 </script>
 
 <section class="hero">
-        <div class="wrapper-text">
-                <h1>Cours de <span>Guitare</span></h1>
-                <h2>Apprenez la guitare avec un professeur de guitare <span> reconnu</span> et <span>expérimenté !</span></h2>
-                <p>Vous souhaitez apprendre la guitare ou vous perfectionner tout en restant chez vous, dans votre confort? <br /> Ne bougez surtout pas...j'arrive!</p>
-                <div class="button"><Button /></div>
-        </div>
+        <h1>Cours de <span>Guitare</span></h1>
+
+        <h2>Apprenez la guitare avec un professeur de guitare <span> reconnu</span> et <span>expérimenté !</span></h2>
+        <p>Vous souhaitez apprendre la guitare ou vous perfectionner? <br>Vous êtes débutant, expérimenté ou pro?  <br> Vous souhaitez un programme personnalisé ou un coaching? <br>
+            Vous souhaitez apprendre en restant chez vous, sans avoir à vous déplacer? <br /> Alors, ne bougez surtout pas...</p>
+        <div class="button"><Button /></div>
 </section>
 
 <style>
         .hero {
                 display: flex;
-                background-color: #49494c;
-                color: white;
-                background-image: url("../assets/guitareCanape.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                min-height: auto;
-                align-items: bottom;
-                justify-content: center;
-                padding: 200px;
-        }
-        .wrapper-text {
-                display: flex;
                 flex-direction: column;
-                align-items: flex-start;
-                justify-content: flex-start;
+                align-items: center;
+                justify-content: center;
+                height: 700px;
                 gap: 20px;
-                margin-top: 350px;
-                background-color: #eee9e9e7;
-                padding: 50px;
-                border-radius: 10px 200px 80px 100px;
-                margin-bottom: 40px;
-                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.327);
+                background-color: #464662;
+                color: white;
         }
+
         .hero h1 {
                 font-family: "inter";
-                letter-spacing: -0.2rem;
+                letter-spacing: -0.1rem;
                 font-size: 4.5rem;
-                font-weight: 700;
-                color: var(--bgHeader);
+                font-weight: 900;
+                color: rgb(255, 255, 255);
+                margin-top: 100px;
+                text-align: center;
         }
         .hero span {
-                color: var(--CTA);
+                color: rgb(248, 229, 20);
         }
         .hero h2 {
                 font-size: 1.5rem;
                 font-weight: 600;
                 line-height: 25px;
-                 color: var(--bgHeader);
+                color: white;
+                text-align: center;
         }
         .hero h2 span {
                 font-weight: 900;
@@ -60,53 +50,32 @@
         .hero p {
                 line-height: 25px;
                 font-weight: 400;
-                color: black;
+                color: white;
+                text-align: center;
         }
 
         .button {
+                margin-top: 20px;
                 display: flex;
-                align-items: center;
-                justify-content: center;
+                align-items: flex-end;
+                justify-content: flex-end;
                 z-index: 0;
-                margin-top: 25px;
-        }
-
-        @media screen and (max-width: 1024px) {
-                .hero {
-                        align-items: center;
-                        justify-content: center;
-                        padding: 30px;
-                }
+                color: black;
         }
 
         @media screen and (max-width: 768px) {
                 .hero {
-                        max-height: 650px;
-                        align-items: center;
-                        justify-content: center;
-                        padding: 100px;
-                           background-position: top;
+                        height: 700px;
+                        padding: 30px;
                 }
-                .wrapper-text {
-                        margin-left: 0px;
-                        margin-top: 140px;
-                        margin-bottom: 20px;
-                        border-radius: 50px;
-                        min-width: 300px;
-                        min-height: auto;
-                }
-
                 .hero h1 {
-                        font-size: 1.5rem;
-                        letter-spacing: -0.1rem;
+                        font-size: 2.5rem;
                 }
                 .hero h2 {
                         font-size: 1rem;
-          
                 }
                 .hero p {
-                        font-size: 0.9rem;
-
+                        font-size: 0.8rem;
                 }
         }
 </style>

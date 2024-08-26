@@ -9,14 +9,11 @@
         import Resa from "../components/Resa.svelte";
 </script>
 
-
 <Hero />
 <Products />
 <About />
-<Service /> 
-<Social /> 
- <Resa />
-<CTA /> 
+<Service />
+<Social />
+<Resa />
+<!-- <CTA /> -->
 <Formulaire />
-
-

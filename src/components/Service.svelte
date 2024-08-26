@@ -15,7 +15,7 @@
                 {
                         icon: Money,
                         title: "Tarifs compétitifs",
-                        paragraph: "Un cours d'une heure à domicile pour 59 euros, c'est un tarif unique et compétitif. Vous ne trouverez pas moins cher pour un cours donné par un professionnel, à domicile !",
+                        paragraph: "Un cours d'une heure à domicile pour 59 euros, c'est un tarif unique et compétitif.  Débutant, expérimenté, pro? Faîtes le choix d'un coaching personnalisé en restant dans votre confort, sans avoir à vous déplacer !",
                 },
         ];
 </script>
@@ -23,7 +23,7 @@
 <section class="service" id="Tarifs">
         <div class="wrapper-text">
                 <h1 class="title"><span>Tarifs</span> et avantages</h1>
-                <p>Un prix unique de 119 euros, mais vous n'en payez que la moitié!</p>
+                <p>Un prix unique de 119 euros, mais vous n'en payerez que la moitié!</p>
                 <div class="tarif">
                         <img class="blob" src={Blob} alt="" />
                         <h1>Tarif unique</h1>

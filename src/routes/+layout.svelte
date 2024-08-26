@@ -3,7 +3,9 @@
         import Footer from "../components/Footer.svelte";
         import './style.css'
 </script>
+  <Header />
+  <slot />
+  <Footer />
 
-<Header />
-<slot />
-<Footer />
+
+

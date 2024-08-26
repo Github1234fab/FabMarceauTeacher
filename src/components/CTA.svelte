@@ -16,15 +16,9 @@
                 flex-direction: column;
                 align-items: left;
                 justify-content: left;
-                background-image: url("../assets/0O4A8591.jpg");
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size:cover  ;
                 height: auto;
-                gap: 50px;
                 background-color: var(--bgSectionB);
                 height: auto;
-                padding: 100px;
         }
         .CTA h1 {
                 font-size: 2rem;
@@ -44,7 +38,6 @@
                 margin-bottom: 20px;
         }
         .wrapper {
-                background-color: #49494cc3;
                 padding: 50px;
                 border-radius: 10px 200px 80px 100px;
                 max-width: 600px;

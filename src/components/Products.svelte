@@ -49,17 +49,17 @@
         <p>La meilleure manière d'apprendre la guitare ou de se perfectionner, c'est de jouer! Jouer et partager pour comprendre, jouer pour se tromper, jouer pour apprendre et progresser.</p>
         <div class="wrapper-competence-value">
                 <div class="wrapper-values">
-                        <i class="fa-solid fa-graduation-cap fa-2xl"></i>
+                        <i class="fa-solid fa-graduation-cap fa-2xl icon"></i>
                         <h2>100%</h2>
                         <p>Pédagogie</p>
                 </div>
                 <div class="wrapper-values">
-                        <i class="fa-solid fa-chart-line fa-2xl"></i>
+                        <i class="fa-solid fa-chart-line fa-2xl icon"></i>
                         <h2>100%</h2>
                         <p>Progression</p>
                 </div>
                 <div class="wrapper-values">
-                        <i class="fa-solid fa-face-smile-wink fa-2xl"></i>
+                        <i class="fa-solid fa-face-smile-wink fa-2xl icon"></i>
                         <h2>100%</h2>
                         <p>Bonne Humeur</p>
                 </div>
@@ -106,6 +106,12 @@
                 text-align: center;
                 margin-top: -30px;
                 text-align: center;
+                margin-top: 2px;
+                font-weight: 700;
+        }
+        .products, .icon, h2 {
+                color: #e7e7e5;
+                font-weight: 900;
         }
         .wrapper-cardA {
                 margin-top: 30px;

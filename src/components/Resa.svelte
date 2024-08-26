@@ -23,13 +23,12 @@
 <style>
         .reservation {
                 display: flex;
-                /* height: calc(100vh ); */
                 height: auto;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                gap: 100px;
-                padding: 200px;
+                gap: 50px;
+                padding: 50px;
                 background-color: white;
         }
 
@@ -38,6 +37,7 @@
                 font-size: 2rem;
                 text-align: center;
                 color: var(--bgHero);
+                margin-top: 50px;
         }
         .reservation h1 span {
                 color: var(--CTA);
@@ -86,11 +86,11 @@
         @media screen and (max-width: 768px) {
                 .reservation {
                         display: flex;
-                        height: 2100px;
+                        height: auto;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
-                        gap: 70px;
+                        gap: 10px;
                         padding: 50px;
                         background-color: var(--bgSectionA);
                 }

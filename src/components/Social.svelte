@@ -10,14 +10,12 @@
         <div class="wrapper-media">
                 <div class="wrapper-video">
                         <h2>Interview de l'école de musique, ISSÉTYS-Lyon 6</h2>
-                         <iframe class="iframe" title="interview Issetys ecole de musique" src="https://www.youtube.com/embed/yH6rYXOxqQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe> 
-                  
+                        <iframe class="iframe" title="interview Issetys ecole de musique" src="https://www.youtube.com/embed/yH6rYXOxqQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
                 </div>
-                <div class="wrapper-img">
+                <!-- <div class="wrapper-img">
                         <h2>Concert des élèves Issétys, 06/2024</h2>
              <img src={Concert} alt="" class="concert" /> 
-              
-                </div>
+                </div> -->
         </div>
 </section>
 
@@ -25,8 +23,8 @@
         .iframe {
                 justify-content: center;
                 align-self: center;
-                  width: auto;
-                height: 57%;
+                width: 90%;
+                height: 100%;
                 border-radius: 10px;
                 box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.259);
         }
@@ -76,17 +74,14 @@
                 margin-top: 50px;
                 padding: 0px;
         }
-        .concert {
+        /* .concert {
                 border-radius: 10px;
                 width: auto;
                 height: 57%;
                 box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.259);
-        }
+        } */
 
-    
-
-        .wrapper-video,
-        .wrapper-img {
+        .wrapper-video {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -96,8 +91,7 @@
                 gap: 20px;
                 padding: 10px;
         }
-        .wrapper-video h2,
-        .wrapper-img h2 {
+        .wrapper-video h2 {
                 font-size: 1.2rem;
                 font-weight: 700;
                 line-height: 25px;
@@ -105,7 +99,4 @@
                 width: 90%;
                 text-align: center;
         }
-     
-
-      
 </style>
