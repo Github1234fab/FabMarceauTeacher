@@ -136,9 +136,10 @@
         }
         @media screen and (max-width: 768px) {
                 .blob {
-                        height: 450px;
-                        top: -170px;
-                        left: -126px;
+                        max-width: 300px;
+                        top: -190px;
+                        left: -50px;
+               
                 }
                 .service {
                         display: flex;
@@ -167,26 +168,14 @@
                         margin-top: 50px;
                 }
                 .tarif h1 {
-                        font-size: 1.5rem;
+                        font-size: 1.3rem;
                 }
                 .tarif h2 {
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                 }
                 .tarif {
                         min-width: 200px;
                 }
         }
-        @media screen and (max-width: 428px) {
-                .blob {
-                        height: 350px;
-                        top: -120px;
-                        left: -80px;
-                }
-                .tarif h1 {
-                        font-size: 1.2rem;
-                }
-                .tarif h2 {
-                        font-size: 1rem;
-                }
-        }
+    
 </style>

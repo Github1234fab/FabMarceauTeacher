@@ -23,7 +23,7 @@
         .iframe {
                 justify-content: center;
                 align-self: center;
-                width: 90%;
+                width: 50%;
                 height: 100%;
                 border-radius: 10px;
                 box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.259);
@@ -90,6 +90,12 @@
                 height: 500px;
                 gap: 20px;
                 padding: 10px;
+        }
+        @media screen and (max-width: 768px) {
+                .iframe {
+                 min-width: 80%;
+                 height: 100%;
+                }
         }
     
 </style>
