@@ -1,6 +1,7 @@
 <script>
         import Card from "../components/Card.svelte";
         import StratoOne from "../assets/stratocastorOne.png";
+        import ButtonCta from "./ButtonCTA.svelte";
 
         const tabA = [
                 {
@@ -76,6 +77,7 @@
                         <Card title={info.title} />
                 {/each}
         </div>
+        <ButtonCta />
 </section>
 
 <style>

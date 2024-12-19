@@ -74,6 +74,7 @@
 </header>
 
 <style>
+
         button {
                 display: flex;
                 height: 35px;
@@ -115,6 +116,7 @@
                 width: 100vw;
                 z-index: 0;
                 transition: opacity 0.8s ease-in-out;
+                   z-index: 10;
         }
 
         .sticky {
@@ -143,6 +145,7 @@
                 font-size: 1rem;
                 gap: 20px;
                 margin-right: 3%;
+      
         }
 
         .menu a,

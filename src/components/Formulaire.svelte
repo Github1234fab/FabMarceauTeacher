@@ -32,7 +32,7 @@
                         <!-- +++++++++++++++++Champ demande+++++++++++++++++ -->
                         <textarea name="demande" id="demande" class="demande" placeholder="Votre demande"></textarea>
                         <!-- +++++++++++++++++Button submit+++++++++++++++++ -->
-                        <input class="button" type="submit" value="Envoyez" />
+                        <input class="btn-grad" type="submit" value="Envoyez" />
                 </form>
         </section>
 </div>
@@ -138,26 +138,30 @@
                 font-size: 0.9rem;
         }
 
-        .button {
-                border: none;
-                background-color: var(--CTA);
-                border: 2px solid white;
-                color: white;
-                font-weight: 500;
-                padding: 20px 10px;
-                border-radius: 8px;
-                max-width: 100px;
-                box-shadow: 0px 0px 15px 0px rgba(128, 128, 128, 0.14);
-                text-align: center;
-                margin-top: 40px;
+     
+         .btn-grad {background-image: linear-gradient(to right, #EB3349 0%, #F45C43  51%, #EB3349  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 25px;
+            text-align: center;
 
-        }
-        .button:hover {
-                animation: bounce 0.4s ease-in-out;
-        }
-        .button:active {
-                border: 2px solid rgb(140, 140, 240);
-        }
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px rgba(37, 37, 37, 0.329);
+            border-radius: 10px;
+            display: block;
+            max-width: 150px;
+            border: none;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+         
         @keyframes bounce {
                 0% {
                         transform: scale(1) translateY(-2px);

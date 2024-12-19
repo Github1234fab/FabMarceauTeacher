@@ -10,7 +10,7 @@
         <div class="circle"><img src={icon} alt="" class="icon" /></div>
         <h1>{title}</h1>
         <p>{paragraph}</p>
-        <a target="_blank" href={lien} class="button">{button} </a>
+        <a target="_blank" href={lien} class="btn-grad">{button} </a>
 </div>
 
 <style>
@@ -24,27 +24,26 @@
                 border-radius: 20px;
                 padding: 40px;
 ;        }
-        .button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: var(--CTA);
-                padding: 20px;
-                border-radius: 10px;
-                transition: 0.3s ease-in-out;
-                color: white;
-                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.215);
-                min-width: 150px;
-                font-weight: 500;
-           
-        }
-        .button:hover {
-                background-color: var(--CTA);
-                transform: scale(1.1);
-        }
-        .button:active {
-               border: 2px solid  lightGrey;
-        }
+      .btn-grad {background-image: linear-gradient(to right, #EB3349 0%, #F45C43  51%, #EB3349  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 25px;
+            text-align: center;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px rgba(37, 37, 37, 0.329);
+            border-radius: 10px;
+            display: block;
+            max-width: 150px;
+            border: none;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
         a {
                 text-decoration: none;
                 color: white;

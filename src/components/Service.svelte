@@ -4,6 +4,7 @@
         import Money from "../assets/money-check-dollar-solid.svg";
         import Balance from "../assets/scale-balanced-solid.svg";
         import Blob from "../assets/blob.svg";
+        import ButtonCta from "./ButtonCTA.svelte";
 
         const tabServices = [
                 { icon: Contract, title: "Fiabilité", paragraph: "Signez le contrat qui définit le cadre des cours  à domicile et vous protègera entre autre de l'annulation intempestive. Réservez votre cours, procéder au paiement et 'let's go for learn! '" },
@@ -36,6 +37,7 @@
                         <FrameCircle icon={info.icon} title={info.title} paragraph={info.paragraph} />
                 {/each}
         </div>
+        <ButtonCta />
 </section>
 
 <style>

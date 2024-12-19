@@ -1,35 +1,35 @@
 
 
-   <a href="#Contact"><button>contact</button></a>
+   <a href="#Contact" class="btn-grad">Contact</a>
 
 <style>
-        button {
-                font-family: "inter";
-                background-image: linear-gradient(to left, var(--CTA) 5%, rgb(233, 188, 106));
-                color: black;
-                font-size: 1rem;
-                font-weight: 700;
-                letter-spacing: -0.2px;
-                max-width: 120px;
-                min-width: 100px;
-                padding: 20px ;
-                text-align: center;
-                border: 1px solid white;
-                z-index: 2;
-                border-radius: 5px;
-                cursor: pointer;
-                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.212);
-                transition: transform 0.5s;
-        }
-        button:hover {
-                transform: scale(1.1);
-        }
-        button:active {
-                border: 4px white solid;
-        }
+       
              a {
                 text-decoration: none;
                 color: white;
         }
+
+
+     
+         .btn-grad {background-image: linear-gradient(to right, #EB3349 0%, #F45C43  51%, #EB3349  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #2b2b2b2f;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+         
   
 </style>

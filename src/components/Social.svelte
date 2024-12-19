@@ -9,7 +9,7 @@
         </div>
         <div class="wrapper-media">
                 <div class="wrapper-video">
-                        <h2>Interview de l'école de musique, ISSÉTYS-Lyon 6</h2>
+                        <!-- <h2>Interview de l'école de musique, ISSÉTYS-Lyon 6</h2> -->
                         <iframe class="iframe" title="interview Issetys ecole de musique" src="https://www.youtube.com/embed/yH6rYXOxqQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
                 </div>
                 <!-- <div class="wrapper-img">
@@ -35,15 +35,15 @@
                 justify-content: center;
                 height: auto;
                 padding: 50px;
-                background-color: var(--CTA);
+                background-color: rgb(197, 197, 197);
         }
         .wrapper-text {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                gap: 20px;
-                width: 100vw;
+                gap: 60px;
+                min-width: 90%;
                 margin-top: 20px;
         }
         .social h1 {
@@ -91,12 +91,5 @@
                 gap: 20px;
                 padding: 10px;
         }
-        .wrapper-video h2 {
-                font-size: 1.2rem;
-                font-weight: 700;
-                line-height: 25px;
-                color: white;
-                width: 90%;
-                text-align: center;
-        }
+    
 </style>

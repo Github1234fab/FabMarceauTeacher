@@ -2,22 +2,24 @@
         import ProfilPicture from "../assets/Marceau.jpg";
         import Button from "../components/ButtonCTA.svelte";
         import Block from "../components/Block.svelte";
+        import ButtonCta from "../components/ButtonCTA.svelte";
 
         let tab = [
                 {
                         title: "+ 17 000",
                         paragraph: "Plus de 17 000 heures de cours de Guitare données !",
-                        icon: "icon",
+                          icon: "fa-solid fa-clock",
+                       
                 },
                 {
                         title: "9",
                         paragraph: "Maîtrise de 9 styles: Rock, Jazz, Blues, Funk, Finger-style, Pop, Bossa Nova, Metal,  Folk.",
-                        icon: "icon",
+                        icon: "fa-solid fa-guitar",
                 },
                 {
                         title: "2",
                         paragraph: "J'enseigne la Guitare sur deux sites géographiques: Lyon 6 et les monts du Lyonnais.",
-                        icon: "icon",
+                        icon: "fa-solid fa-location-dot",
                 },
         ];
 </script>
@@ -40,6 +42,7 @@
                                 d'empathie et de technique pédagogique pour s'adapter à chaque élève, dans le but de lui permettre d'évoluer dans sa pratique, de devenir autonome.
                         </p>
                 </div>
+                <ButtonCta />
         </div>
         
 </section>
@@ -82,7 +85,7 @@
         }
         .wrapper-text p {
                 line-height: 25px;
-                margin-bottom: 50px;
+                margin-bottom: 10px;
                 padding: 50px;
         }
         .wrapper-frames-circle {
