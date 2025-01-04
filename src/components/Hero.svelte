@@ -4,6 +4,7 @@
 </script>
 
 <section class="hero">
+        <div class="wrapper-hero">
         <h1>Cours de <span>Guitare</span></h1>
 
         <h2>Apprenez la guitare avec un professeur de guitare <span> reconnu</span> et <span>expérimenté !</span></h2>
@@ -12,6 +13,7 @@
                 Vous souhaitez apprendre en restant chez vous, sans avoir à vous déplacer? <br /> Alors, ne bougez surtout pas...
         </p>
         <div class="button"><Button /></div>
+        </div>
 </section>
 
 <style>
@@ -21,13 +23,26 @@
                 align-items: center;
                 justify-content: center;
                 height: 700px;
-                gap: 20px;
                 background-image: url(" https://images.pexels.com/photos/1656066/pexels-photo-1656066.jpeg?auto=compress&cs=tinysrgb&w=600;");
                 background-size: cover;
                 background-repeat: no-repeat;
                 color: white;
                 overflow: hidden;
                 position: relative;
+        }
+        .wrapper-hero {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 40px;
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.121);
+                border-radius: 20px;
+                z-index: 3;
+                backdrop-filter: blur(10px);
+                margin-top: 50px;
+              
         }
         .hero::after {
                 content: "";
@@ -37,7 +52,7 @@
                 transform: translate(-50%, -50%);
                 height: 100%;
                 width: 100%;
-                background-color: rgba(0, 0, 0, 0.5);
+                background-color: rgba(26, 26, 26, 0.5);
                 z-index: 1;
         }
 
@@ -47,7 +62,7 @@
                 font-size: 4.5rem;
                 font-weight: 900;
                 color: rgb(255, 255, 255);
-                margin-top: 100px;
+                margin-top: 10px;
                 text-align: center;
                 z-index: 3;
         }
@@ -87,7 +102,7 @@
 
         @media screen and (max-width: 768px) {
                 .hero {
-                        height: 700px;
+                        height: 900px;
                         padding: 30px;
                 }
                 .hero h1 {

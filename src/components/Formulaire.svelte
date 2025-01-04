@@ -139,28 +139,28 @@
         }
 
      
-         .btn-grad {background-image: linear-gradient(to right, #EB3349 0%, #F45C43  51%, #EB3349  100%)}
-         .btn-grad {
-            margin: 10px;
-            padding: 15px 25px;
-            text-align: center;
+               .btn-grad {
+                background-color: rgb(140, 140, 241);
+        }
 
-            transition: 0.5s;
-            background-size: 200% auto;
-            color: white;            
-            box-shadow: 0 0 20px rgba(37, 37, 37, 0.329);
-            border-radius: 10px;
-            display: block;
-            max-width: 150px;
-            border: none;
-          }
+        .btn-grad {
+                max-width: 150px;
+                margin: 10px;
+                padding: 15px 45px;
+                text-align: center;
+                transition: 0.5s;
+                background-size: 200% auto;
+                color: white;
+                font-weight: 700;
+                box-shadow: 0 0 20px #2b2b2b2f;
+                border-radius: 10px;
+                display: block;
+                border: 1px solid white;
+        }
 
-          .btn-grad:hover {
-            background-position: right center; /* change the direction of the change here */
-            color: #fff;
-            text-decoration: none;
-          }
-         
+        .btn-grad:hover {
+                border-radius: 20px;
+        }
          
         @keyframes bounce {
                 0% {

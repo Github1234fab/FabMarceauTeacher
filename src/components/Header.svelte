@@ -110,7 +110,7 @@
                 align-items: center;
                 justify-content: space-between;
                 min-height: auto;
-                background-color: var(--bgHeader);
+                background-color: rgb(236, 236, 236);
                 padding: 20px;
                 position: fixed;
                 width: 100vw;
@@ -151,7 +151,7 @@
         .menu a,
         .burger-menu a {
                 text-decoration: none;
-                color: white;
+                color: rgb(48, 48, 48);
                 font-weight: 400;
                 font-size: 1rem;
                 transition: 0.4s ease-in-out;
@@ -168,6 +168,7 @@
                 }
                 .burger-menu {
                         display: flex;
+                        background-color: rgb(231, 232, 232);
                 }
                 button {
                         display: flex;
