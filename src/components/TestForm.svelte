@@ -5,7 +5,7 @@
   let Téléphone = "";
   let message = ""; // Pour afficher le message de confirmation ou d'erreur
 
-  const sheetUrl = "https://script.google.com/macros/s/AKfycbx6ITKkCethjOCcJHzNbBfYXW_ZJYJeQFyHI3r2mEccnQXGuOQJE6mQoyKRrPANpDyJbQ/exec";
+  const sheetUrl = "https://script.google.com/macros/s/AKfycbxw0ubekdZTlDCsCR_YJMFqv1ENpdLSncJfN-_q1O_xEcsNdsejGjQUwPEwMz6XZeEuuw/exec";
   async function submitForm() {
     // Test d'accès à l'API
     await fetch(sheetUrl, { method: "GET", mode: "no-cors" });
