@@ -3,27 +3,48 @@
     let Email = "";
     let Demande = "";
     let Téléphone = "";
+    let message = ""; // Pour afficher le message de confirmation ou d'erreur
 
-    const sheetUrl = "https://script.google.com/macros/s/AKfycbx3gxGxfJM6k1bzzskfHYa0l6crpxgRc1Xfy2lxGqtnGOPU0bGa3TwJukUcDZjw9hLVCA/exec"; 
-  
+    const sheetUrl = "https://script.google.com/macros/s/AKfycbzl9oqQdrFphsFQII_Gx4K6Bv54lVdvdKiYpALqq-yvIbTeYsabNLeIRcA-uBeFwIxBXw/exec"; 
+
     async function submitForm() {
-      const response = await fetch(sheetUrl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ Nom, Email, Demande, Téléphone }),
-      });
-  
-      const text = await response.text();
-      console.log("Réponse du serveur :", text);
+        message = ""; // Réinitialiser le message
+
+        try {
+            const response = await fetch(sheetUrl, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ Nom, Email, Demande, Téléphone }),
+            });
+
+            const result = await response.json(); // Convertir la réponse en JSON
+
+            if (result.status === "success") {
+                message = "✅ Formulaire envoyé avec succès !";
+                // Réinitialiser les champs du formulaire après envoi
+                Nom = "";
+                Email = "";
+                Demande = "";
+                Téléphone = "";
+            } else {
+                message = "❌ Une erreur est survenue. Veuillez réessayer.";
+            }
+        } catch (error) {
+            console.error("Erreur lors de l'envoi :", error);
+            message = "❌ Impossible d'envoyer le formulaire. Vérifiez votre connexion.";
+        }
     }
-  </script>
-  
-  <form on:submit|preventDefault={submitForm}>
+</script>
+
+<form on:submit|preventDefault={submitForm}>
     <input type="text" bind:value={Nom} placeholder="Nom" required />
     <input type="email" bind:value={Email} placeholder="Email" required />
     <input type="text" bind:value={Demande} placeholder="Demande" required />
     <input type="tel" bind:value={Téléphone} placeholder="Téléphone" required />
-
-
+    
     <button type="submit">Envoyer</button>
-  </form>
+
+    {#if message}
+        <p>{message}</p> <!-- Affiche le message de succès ou d'erreur -->
+    {/if}
+</form>
