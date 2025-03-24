@@ -6,11 +6,10 @@
   let message = ""; // Pour afficher le message de confirmation ou d'erreur
 
   const sheetUrl = "https://script.google.com/macros/s/AKfycbxw0ubekdZTlDCsCR_YJMFqv1ENpdLSncJfN-_q1O_xEcsNdsejGjQUwPEwMz6XZeEuuw/exec";
-  async function submitForm() {
-    // Test d'accès à l'API
-    await fetch(sheetUrl, { method: "GET", mode: "no-cors" });
 
-    // Envoi des données
+  async function submitForm() {
+  // Envoi des données sans lire la réponse, mais avec un message de confirmation
+  try {
     const response = await fetch(sheetUrl, {
       method: "POST",
       mode: "no-cors", // 🔴 Permet d’éviter l’erreur mais empêche de lire la réponse
@@ -18,8 +17,28 @@
       body: JSON.stringify({ Nom, Email, Demande, Téléphone }),
     });
 
-    console.log("Formulaire soumis !");
+    // Affiche le message de succès
+    message = "Formulaire soumis avec succès !";
+  } catch (error) {
+    message = "Erreur lors de l'envoi du formulaire.";
+    console.error(error);
   }
+}
+
+//   async function submitForm() {
+//     // Test d'accès à l'API
+//     await fetch(sheetUrl, { method: "GET", mode: "no-cors" });
+
+//     // Envoi des données
+//     const response = await fetch(sheetUrl, {
+//       method: "POST",
+//       mode: "no-cors", // 🔴 Permet d’éviter l’erreur mais empêche de lire la réponse
+//       headers: { "Content-Type": "application/json" },
+//       body: JSON.stringify({ Nom, Email, Demande, Téléphone }),
+//     });
+
+//     console.log("Formulaire soumis !");
+//   }
 </script>
 
 <form on:submit|preventDefault={submitForm}>
