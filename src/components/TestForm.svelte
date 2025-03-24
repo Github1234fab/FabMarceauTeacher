@@ -25,20 +25,19 @@
   }
 }
 
-//   async function submitForm() {
-//     // Test d'accès à l'API
-//     await fetch(sheetUrl, { method: "GET", mode: "no-cors" });
 
-//     // Envoi des données
-//     const response = await fetch(sheetUrl, {
-//       method: "POST",
-//       mode: "no-cors", // 🔴 Permet d’éviter l’erreur mais empêche de lire la réponse
-//       headers: { "Content-Type": "application/json" },
-//       body: JSON.stringify({ Nom, Email, Demande, Téléphone }),
-//     });
+async function testGoogleScript() {
+  try {
+    const response = await fetch(sheetUrl, { method: "GET" });
+    const data = await response.text();
+    console.log("Réponse de Google Apps Script :", data);
+  } catch (error) {
+    console.error("Erreur lors de la requête :", error);
+  }
+}
 
-//     console.log("Formulaire soumis !");
-//   }
+testGoogleScript();
+
 </script>
 
 <form on:submit|preventDefault={submitForm}>
