@@ -1,55 +1,46 @@
 <script>
-  let Nom = "";
-  let Email = "";
-  let Demande = "";
-  let Téléphone = "";
-  let message = ""; // Pour afficher le message de confirmation ou d'erreur
+    let Nom = "";
+    let Email = "";
+    let Demande = "";
+    let Téléphone = "";
+    let message = ""; // Message de confirmation ou d'erreur
+  
+    const sheetUrl = "https://script.google.com/macros/s/AKfycbxawIP7hChV6KuWiueMfBlBC67E-UDNKoa2v5ybyhrnaOSFzktW7GbaeBtGtc-Uha8Ysg/exec";
+  
+    // Fonction pour soumettre le formulaire
+    async function submitForm() {
+  // Test d'accès à l'API
+  await fetch(sheetUrl, { method: "GET", mode: "no-cors" });
 
-  const sheetUrl = "https://script.google.com/macros/s/AKfycbw9a8mA0cz4G5LJrLBtjAO1UxAGkzwMQS2lNwXnKR9aJMxkw9ZOZEsdXqwml0zyI18cyQ/exec";
+  // Envoi des données
+  const response = await fetch(sheetUrl, {
+    method: "POST",
+    mode: "no-cors", // 🔴 Permet d’éviter l’erreur mais empêche de lire la réponse
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ Nom, Email, Demande, Téléphone }),
+  });
 
-  async function submitForm() {
-  // Envoi des données sans lire la réponse, mais avec un message de confirmation
-  try {
-    const response = await fetch(sheetUrl, {
-      method: "POST",
-      mode: "no-cors", // 🔴 Permet d’éviter l’erreur mais empêche de lire la réponse
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ Nom, Email, Demande, Téléphone }),
-    });
-
-    // Affiche le message de succès
-    message = "Formulaire soumis avec succès !";
-  } catch (error) {
-    message = "Erreur lors de l'envoi du formulaire.";
-    console.error(error);
-  }
+  console.log("Formulaire soumis !");
 }
-
-
-async function testGoogleScript() {
-  try {
-    const response = await fetch(sheetUrl, { method: "GET" });
-    const data = await response.text();
-    console.log("Réponse de Google Apps Script :", data);
-  } catch (error) {
-    console.error("Erreur lors de la requête :", error);
-  }
-}
-
-testGoogleScript();
-
-</script>
-
-<form on:submit|preventDefault={submitForm}>
-  <input type="text" bind:value={Nom} placeholder="Nom" required />
-  <input type="email" bind:value={Email} placeholder="Email" required />
-  <input type="text" bind:value={Demande} placeholder="Demande" required />
-  <input type="tel" bind:value={Téléphone} placeholder="Téléphone" required />
-
-  <button type="submit">Envoyer</button>
-
+  </script>
+  
+  <form on:submit|preventDefault={submitForm}>
+    <label for="Nom">Nom:</label>
+    <input id="Nom" type="text" bind:value={Nom} required />
+  
+    <label for="Email">Email:</label>
+    <input id="Email" type="email" bind:value={Email} required />
+  
+    <label for="Demande">Demande:</label>
+    <textarea id="Demande" bind:value={Demande} required></textarea>
+  
+    <label for="Téléphone">Téléphone:</label>
+    <input id="Téléphone" type="tel" bind:value={Téléphone} />
+  
+    <button type="submit">Soumettre</button>
+  </form>
+  
   {#if message}
     <p>{message}</p>
-    <!-- Affiche le message de succès ou d'erreur -->
   {/if}
-</form>
+  
