@@ -71,7 +71,7 @@
                 font-size: 1rem;
                 font-weight: 400;
                 line-height: 25px;
-                max-width: 200px;
+                width: 200px;
                 min-height: 150px;
         }
 

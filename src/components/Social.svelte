@@ -35,7 +35,7 @@
                 justify-content: center;
                 height: auto;
                 padding: 50px;
-                background-color: rgb(197, 197, 197);
+                background-color: rgb(161, 24, 24);
         }
         .wrapper-text {
                 display: flex;
@@ -64,7 +64,7 @@
                 line-height: 25px;
                 color: white;
                 text-align: center;
-                width: 90%;
+                width: 100%;
         }
         .wrapper-media {
                 display: flex;

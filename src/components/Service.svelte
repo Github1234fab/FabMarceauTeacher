@@ -11,7 +11,7 @@
                 {
                         icon: Balance,
                         title: "Avance de crédit d'impôt",
-                        paragraph: "Avec le service à la personne, vous bénéficiez d'une réduction d'impôt de 50% sur le montant des cours. Vous avancez 119 euros, mais vous n'en payerez au final que la moitiée, c'est à dire 59 euros!!",
+                        paragraph: "Avec le service à la personne, vous bénéficiez d'une réduction d'impôt de 50% sur le montant des cours. Vous avancez 79 euros, mais vous n'en payerez au final que la moitiée, c'est à dire 39.50 euros!!",
                 },
                 {
                         icon: Money,
@@ -24,11 +24,11 @@
 <section class="service" id="Tarifs">
         <div class="wrapper-text">
                 <h1 class="title"><span>Tarifs</span> et avantages</h1>
-                <p>Un prix unique de 119 euros, mais vous n'en payerez que la moitié!</p>
+                <p>Un prix unique de 79 €, mais vous n'en payerez que la moitié, c'est à dire 39.50 €!</p>
                 <div class="tarif">
-                        <img class="blob" src={Blob} alt="" />
+                      
                         <h1>Tarif unique</h1>
-                        <h2>59 €/1 heure</h2>
+                        <h2>79 €/1 heure</h2>
                 </div>
         </div>
 
@@ -49,7 +49,7 @@
                 align-items: center;
                 justify-content: center;
                 gap: 100px;
-                padding: 200px;
+                padding: 40px;
                 background-color: var(--bgSectionA);
         }
         .wrapper-text {
@@ -58,16 +58,10 @@
                 align-items: center;
                 justify-content: center;
                 gap: 20px;
-                margin-bottom: 20px;
-                margin-top: 100px;
+                margin-bottom: 0px;
+                margin-top: 40px;
         }
-        .blob {
-                position: absolute;
-                z-index: 0;
-                top: -190px;
-                left: -130px;
-                height: 500px;
-        }
+    
         .service h1 {
                 font-weight: 800;
                 font-size: 2rem;
@@ -92,6 +86,7 @@
                 border-radius: 10px;
                 margin-top: 80px;
                 position: relative;
+                background-color: var(--blue);
         }
         .tarif h1 {
                 color: white;
@@ -107,7 +102,7 @@
                 align-items: center;
                 justify-content: center;
                 gap: 50px;
-                margin-top: 100px;
+                margin-top: 50px;
                 margin-bottom: 50px;
         }
         @media screen and (max-width: 1440px) {
@@ -135,12 +130,7 @@
                 }
         }
         @media screen and (max-width: 768px) {
-                .blob {
-                        max-width: 300px;
-                        top: -190px;
-                        left: -50px;
-               
-                }
+              
                 .service {
                         display: flex;
                         height: auto;

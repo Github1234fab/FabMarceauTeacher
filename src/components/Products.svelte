@@ -110,6 +110,8 @@
                 text-align: center;
                 margin-top: 2px;
                 font-weight: 700;
+                width: 100%;
+              
         }
         .products, .icon, h2 {
                 color: #e7e7e5;
@@ -209,6 +211,7 @@
                         font-weight: 400;
                         color: var(--white);
                         line-height: 25px;
+                        width: 100%;
                 }
         }
 </style>

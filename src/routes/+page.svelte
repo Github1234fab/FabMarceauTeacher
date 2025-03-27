@@ -8,13 +8,15 @@
   import Formulaire from "../components/Formulaire.svelte";
   import Resa from "../components/Resa.svelte";
   import TestForm from "../components/TestForm.svelte";
+
 </script>
 
+
 <Hero />
-<Products />
 <About />
+<Products />
+
 <Service />
 <Social />
 <Resa />
-<TestForm/>
 <Formulaire />

@@ -23,8 +23,9 @@
                 align-items: center;
                 justify-content: center;
                 height: 700px;
-                background-image: url(" https://images.pexels.com/photos/1656066/pexels-photo-1656066.jpeg?auto=compress&cs=tinysrgb&w=600;");
+                background-image: url("../assets/guitareSoleil.jpg");
                 background-size: cover;
+                background-position: center;
                 background-repeat: no-repeat;
                 color: white;
                 overflow: hidden;
@@ -104,6 +105,7 @@
                 .hero {
                         height: 900px;
                         padding: 30px;
+                        background-size: cover;
                 }
                 .hero h1 {
                         font-size: 2.5rem;

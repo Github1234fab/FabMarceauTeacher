@@ -45,7 +45,7 @@
                 justify-content: center;
                 gap: 50px;
                 padding: 50px;
-                background-color: var(--bgSectionA);
+                background-color: rgb(143, 63, 63);
         }
         .section-form {
                 display: flex;
@@ -77,16 +77,18 @@
         .form-title {
                 text-transform: uppercase;
                 font-size: 2rem;
-                color: var(--bgHero);
+                color: white;
                 font-weight: 700;
                 margin-bottom: 0px;
-                letter-spacing: -0.04em;
+                letter-spacing: 0rem;
                 margin-top: 50px;
                 text-align: center;
                 margin-bottom: 20px;
         }
         .form-title span {
-                color: var(--CTA);
+                color: black;
+                font-weight: 900;
+                font-size: 2.1rem
         }
 
         .wrapper-inputs {
@@ -125,7 +127,7 @@
                 margin: 0 auto;
                 min-height: 200px;
                 background-color: transparent;
-                color: var(--bgHero);
+                color: white;
                 font-size: 1rem;
                 font-family: "Raleway";
         }
@@ -133,7 +135,7 @@
                 animation: bounce 0.4s ease-in-out;
         }
         .demande::placeholder {
-                color: var(--bgHero);
+                color: white;
                 font-size: 0.7em;
                 font-size: 0.9rem;
         }
@@ -187,11 +189,11 @@
                 gap: 50px;
         }
         .icon-coordonnees {
-                color: var(--bgHero);
+                color: white;
         }
         .contact-form {
                 font-weight: 500;
-                color: var(--bgHero);
+                color: white;
                 letter-spacing: -0.05em;
                 font-size: var(--m);
                 text-align: center;

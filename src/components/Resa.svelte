@@ -27,7 +27,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                gap: 50px;
+                gap: 20px;
                 padding: 50px;
                 background-color: white;
         }
@@ -47,7 +47,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 50px;
+                gap: 30px;
                 margin-top: 10px;
                 margin-bottom: 50px;
         }
@@ -80,7 +80,7 @@
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
-                        gap: 160px;
+                        gap: 50px;
                 }
         }
         @media screen and (max-width: 768px) {
@@ -100,7 +100,7 @@
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
-                        gap: 160px;
+                        gap: 50px;
                 }
                 .title {
                         max-width: 160px;

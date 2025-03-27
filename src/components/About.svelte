@@ -87,6 +87,7 @@
                 line-height: 25px;
                 margin-bottom: 10px;
                 padding: 50px;
+                width: 70%;
         }
         .wrapper-frames-circle {
                 grid-column: 1/3;
@@ -124,7 +125,8 @@
                         grid-row: 2;
                         gap: 20px;
                         margin-top: 20px ;
-                        padding: 10px;
+                        padding: 0px;
+                        width: 100%;
                 }
                 .wrapper-frames-circle {
                         grid-column: 1/3;

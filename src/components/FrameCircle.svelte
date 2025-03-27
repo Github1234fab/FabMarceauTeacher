@@ -43,6 +43,6 @@
                 font-size: 1rem;
                 font-weight: 400;
                 line-height: 25px;
-                width: 90%;
+                width: 70%;
         }
 </style>

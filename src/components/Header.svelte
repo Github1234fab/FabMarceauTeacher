@@ -125,9 +125,10 @@
         }
 
         .strato {
-                margin-left: -30px;
-                height: 70px;
+                margin-left: 0px;
+                max-height: 50px;
         }
+
 
         .container-strat {
                 display: flex;
