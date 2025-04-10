@@ -45,7 +45,8 @@
                 justify-content: center;
                 gap: 50px;
                 padding: 50px;
-                background-color: rgb(143, 63, 63);
+                background: radial-gradient(rgb(109, 109, 212), rgb(10, 10, 105));
+
         }
         .section-form {
                 display: flex;
@@ -86,7 +87,7 @@
                 margin-bottom: 20px;
         }
         .form-title span {
-                color: black;
+                color: rgb(224, 222, 222);
                 font-weight: 900;
                 font-size: 2.1rem
         }

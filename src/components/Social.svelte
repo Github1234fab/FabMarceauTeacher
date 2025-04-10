@@ -4,8 +4,8 @@
 
 <section class="social">
         <div class="wrapper-text">
-                <h1>Fabien Marceau<br /><span>Directeur, Formateur, Professeur</span></h1>
-                <p>J'ai créé l'école de musique ISSÉTYS en 2009. J'ai formé de nombreux professeurs à une pédagogie nouvelle et dépoussiérée. L'école de musique Issétys enseigne la guitare, le piano, la basse, le chant, le ukulélé et la batterie.</p>
+                <h1>Fabien Marceau<br /><span>Professeur de guitare expérimenté</span></h1>
+                <p>J'ai créé l'école de musique ISSÉTYS en 2009. J'ai formé de nombreux professeurs à une pédagogie nouvelle et dépoussiérée. <br> L'école de musique Issétys enseigne la guitare, le piano, la basse, le chant, le ukulélé et la batterie.</p>
         </div>
         <div class="wrapper-media">
                 <div class="wrapper-video">
@@ -35,7 +35,8 @@
                 justify-content: center;
                 height: auto;
                 padding: 50px;
-                background-color: rgb(161, 24, 24);
+                background: radial-gradient(rgb(109, 109, 212), rgb(10, 10, 105));
+
         }
         .wrapper-text {
                 display: flex;
@@ -55,7 +56,7 @@
         .social h1 span {
                 font-size: 2rem;
                 font-weight: 800;
-                color: black;
+                color: rgb(219, 216, 216);
         }
 
         .social p {

@@ -81,9 +81,9 @@
                 align-items: center;
                 justify-content: center;
                 gap: 10px;
-                padding: 35px;
+                padding: 25px;
                 background: transparent;
-                border-radius: 10px;
+                border-radius: 10px 34px 2px 78px;
                 margin-top: 80px;
                 position: relative;
                 background-color: var(--blue);

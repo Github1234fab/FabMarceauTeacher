@@ -31,6 +31,17 @@
                 overflow: hidden;
                 position: relative;
         }
+        .hero::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: radial-gradient(rgb(109, 109, 212, 0.2), rgb(10, 10, 105, 0.5));
+
+                z-index: 2;
+        }
         .wrapper-hero {
                 display: flex;
                 flex-direction: column;
@@ -78,6 +89,7 @@
                 color: white;
                 text-align: center;
                 z-index: 3;
+                padding: 20px;
         }
         .hero h2 span {
                 font-weight: 900;
@@ -89,6 +101,7 @@
                 color: white;
                 text-align: center;
                 z-index: 3;
+                padding: 20px;
         }
 
         .button {

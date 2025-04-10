@@ -7,7 +7,7 @@
   import CTA from "../components/CTA.svelte";
   import Formulaire from "../components/Formulaire.svelte";
   import Resa from "../components/Resa.svelte";
-  import TestForm from "../components/TestForm.svelte";
+  // import TestForm from "../components/TestForm.svelte";
 
 </script>
 
@@ -15,7 +15,7 @@
 <Hero />
 <About />
 <Products />
-
+<!-- <TestForm /> -->
 <Service />
 <Social />
 <Resa />
