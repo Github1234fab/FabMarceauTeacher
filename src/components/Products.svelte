@@ -97,7 +97,8 @@
                 color: var(--white);
                 font-size: 2rem;
                 text-align: center;
-                line-height: 40px;;
+                line-height: 40px;
+                margin-top: 50px;
         }
         .matière{
                 text-align: center;
