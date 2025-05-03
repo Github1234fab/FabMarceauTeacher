@@ -7,6 +7,7 @@
         let tabReservation = [
                 { icon: Calendar, title: "Réservez", paragraph: "Pour réservez votre cours, c'est simple! Vous réservez votre créneau en cliquant sur le bouton 'Je réserve'.", button: "Je réserve", lien: "https://doodle.com/bp/fabienmarceau1/rservez-votre-cours-de-guitare-domicile" },
                 { icon: Check, title: "Checkez", paragraph: "Vous recevez ensuite un mail de validation de créneau que vous allez confirmer à votre tour", button: "Je valide", lien: "mailto:fabienMarceauPro@gmail.com" },
+                { icon: CreditCard, title: "Payer", paragraph: "Une fois votre créneau validé, il ne vous reste plus qu'à procéder au paiement de votre cours en ligne et vous tenir prêt pour votre cours de Guitare", button: "Je paie", lien: 'https://buy.stripe.com/4gw6rY7Xz7GIexWbIJ' },
                
         ];
 </script>
