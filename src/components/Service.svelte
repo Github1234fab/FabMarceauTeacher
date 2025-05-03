@@ -28,6 +28,7 @@
     <div class="tarif">
       <h1>Tarif unique</h1>
       <h2>79 €/1 heure</h2>
+      <h2>Le cours vous coûtera 39,50€</h2>
     </div>
   </div>
 
@@ -47,7 +48,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
     padding: 40px;
     background-color: var(--bgSectionA);
   }
@@ -70,7 +71,7 @@
     color: var(--CTA);
   }
   .service p {
-    font-weight: 400;
+    font-weight: 600;
     text-align: center;
     line-height: 25px;
   }
@@ -80,10 +81,10 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 25px;
+    padding: 45px;
     background-color: var(--blue);
     border-radius: 10px 34px 2px 78px;
-    margin-top: 80px;
+    margin-top: 30px;
     position: relative;
 
   }
@@ -136,7 +137,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 70px;
+      gap: 50px;
 
       background-color: var(--bgSectionA);
     }
@@ -150,7 +151,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 100px;
+      gap: 50px;
     }
     .title {
       margin-top: 50px;
@@ -160,6 +161,7 @@
     }
     .tarif h2 {
       font-size: 1rem;
+      text-align: center;
     }
     .tarif {
       min-width: 200px;

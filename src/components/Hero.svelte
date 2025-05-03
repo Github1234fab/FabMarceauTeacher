@@ -37,7 +37,7 @@
     align-items: center;
     justify-content: center;
     gap: 0px;
-    padding: 40px;
+    padding: 20px;
     border-radius: 20px;
     z-index: 3;
     backdrop-filter: blur(10px);
@@ -79,7 +79,7 @@
     color: rgb(46, 45, 45);
     text-align: center;
     z-index: 3;
-    padding: 20px;
+    padding: 0px;
   }
   .hero h3 span {
     font-weight: 900;
