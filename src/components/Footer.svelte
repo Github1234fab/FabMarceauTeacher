@@ -36,7 +36,7 @@
         }
         a {
                 color: white;
-                font-size: 0.8rem;
+                font-size: 0.9rem;
                 text-decoration: dotted !important;
           
         }
