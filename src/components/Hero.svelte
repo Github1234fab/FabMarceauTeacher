@@ -7,7 +7,7 @@
   <div class="wrapper-hero">
     <h1>Cours de <span>Guitare</span> à domicile</h1>
     <h2>Cours de guitare et coaching, à Lyon 6 et Lyon-Ouest</h2>
-    <h3>Avec professeur de guitare <span> reconnu</span> et <span>expérimenté  !</span></h3>
+    <h3>Avec Fabien Marceau, professeur de guitare <br> <span> reconnu</span> et <span>expérimenté  !</span></h3>
     <!-- <p>
       Vous souhaitez apprendre la guitare ou vous perfectionner? <br />Vous êtes débutant, expérimenté ou pro? <br /> Vous souhaitez un programme personnalisé ou un coaching? <br />
       Vous souhaitez apprendre en restant chez vous, sans avoir à vous déplacer? <br />
