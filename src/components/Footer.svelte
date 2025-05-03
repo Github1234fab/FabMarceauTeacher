@@ -9,7 +9,7 @@
         <h3>Tous droits réservés fabien Marceau {date}</h3>
         <a href="https://www.ecole-musique-lyon-issetys.com/">École de musique issétys</a>
         <a href="https://www.ecole-guitare-lyon.fr/">École de guitare de lyon</a>
-        <a href="https://gralypho.com/">Gralypho</a>
+        <a href="https://gralypho.com/">Site réalisé par Gralypho</a>
 </footer>
 
 <style>
@@ -18,7 +18,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                background-color: #151523;
+                background-color: var(--CTA);
                 color: white;
                 height: auto;
                 padding: 40px;
@@ -35,7 +35,9 @@
                 width: 70px;
         }
         a {
-                color: rgb(205, 205, 238);
+                color: white;
+                font-size: 0.8rem;
+                text-decoration: dotted !important;
           
         }
 </style>

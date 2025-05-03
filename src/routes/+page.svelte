@@ -16,7 +16,7 @@
 <About />
 <Products />
 <!-- <TestForm /> -->
-<Service />
+ <Service />
 <Social />
 <Resa />
-<Formulaire />
+<Formulaire /> 

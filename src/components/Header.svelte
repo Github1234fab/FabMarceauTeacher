@@ -112,7 +112,7 @@
                 min-height: auto;
                 background-color: rgb(236, 236, 236);
                 padding: 20px;
-                position: fixed;
+         
                 width: 100vw;
                 z-index: 0;
                 transition: opacity 0.8s ease-in-out;
@@ -153,7 +153,7 @@
         .burger-menu a {
                 text-decoration: none;
                 color: rgb(48, 48, 48);
-                font-weight: 400;
+                font-weight: 600;
                 font-size: 1rem;
                 transition: 0.4s ease-in-out;
         }

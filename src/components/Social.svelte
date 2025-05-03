@@ -35,7 +35,7 @@
                 justify-content: center;
                 height: auto;
                 padding: 50px;
-                background: radial-gradient(rgb(109, 109, 212), rgb(10, 10, 105));
+                background-color: var(--bg);
 
         }
         .wrapper-text {

@@ -47,7 +47,7 @@
 
 <section class="products" id="cours_de_guitare">
         <h1>Apprendre la Guitare en jouant</h1>
-        <p>La meilleure manière d'apprendre la guitare ou de se perfectionner, c'est de jouer! Jouer et partager pour comprendre, jouer pour se tromper, jouer pour apprendre et progresser.</p>
+        <p>La meilleure manière d'apprendre la guitare ou de se perfectionner, c'est de jouer! <br>Jouer et partager pour comprendre, jouer pour se tromper, jouer pour apprendre et progresser.</p>
         <div class="wrapper-competence-value">
                 <div class="wrapper-values">
                         <i class="fa-solid fa-graduation-cap fa-2xl icon"></i>
@@ -89,7 +89,7 @@
                 height: auto;
                 gap: 80px;
                 padding: 200px;
-                background: radial-gradient(rgb(109, 109, 212), rgb(10, 10, 105));
+                background-color: #3d3c3d;
                 z-index: 0;
         }
         .products h1 {
@@ -97,6 +97,7 @@
                 color: var(--white);
                 font-size: 2rem;
                 text-align: center;
+                line-height: 40px;;
         }
         .matière{
                 text-align: center;
@@ -188,7 +189,7 @@
 
         @media screen and (max-width: 768px) {
                 .products {
-                        padding: 100px;
+                        padding: 20px;
                 }
                 .wrapper-competence-value {
                         display: flex;

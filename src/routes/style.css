@@ -11,8 +11,11 @@ html {
 }
 
 :root {
+        --txt:     color: rgb(46, 45, 45);
         --bgHeader: #14282c;
-        --CTA: #CC5500;
+        --bg:#3d3c3d;
+        --CTA:#2f4858;
+        /* --CTA:#f2ecff; */
         --white: rgb(235, 235, 235);
         --Raleway: "Raleway", sans-serif;
         --bgSectionA: #f2f2f2;

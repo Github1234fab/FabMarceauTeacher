@@ -45,7 +45,7 @@
                 justify-content: center;
                 gap: 50px;
                 padding: 50px;
-                background: radial-gradient(rgb(109, 109, 212), rgb(10, 10, 105));
+                background-color: var(--bg);
 
         }
         .section-form {
@@ -108,7 +108,7 @@
                 border-radius: 15px;
                 width: 100%;
                 text-align: left;
-                color: var(--bgHero);
+                color: white;
                 font-size: 1rem;
                 font-family: "Raleway";
         }

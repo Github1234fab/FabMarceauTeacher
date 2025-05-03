@@ -21,7 +21,11 @@
                 min-width: 170px;
                 min-height: 120px;
                 flex: 1 1 10%;
-                background-color: transparent;
+                background-image: linear-gradient(
+                        to bottom,
+                        rgba(100, 98, 98, 0.1),
+                        rgba(255, 255, 255, 0.1)
+                );
         }
 
         .wrapper-card h1 {

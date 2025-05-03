@@ -19,11 +19,11 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                padding: 50px;
+                padding: 30px;
                 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.142);
                 border-radius: 8px;
                 max-width: 300px;
-                min-height: 450px;
+                min-height:400px;
         }
         .wrapper-text {
                 display: flex;
@@ -49,6 +49,18 @@
                 color: var(--CTA);
                 text-align: center;
                 color: grey;
+        }
+
+        @media screen and (max-width: 768px) {
+                .block {
+                        min-height: auto;
+                }
+                h1 {
+                        font-size: 2rem;
+                }
+                p {
+                        font-size: 1rem;
+                }
         }
 
 </style>

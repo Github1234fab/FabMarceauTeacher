@@ -1,30 +1,25 @@
 <a href="#Contact" class="btn-grad">Contact</a>
 
 <style>
-        a {
+  /* a {
                 text-decoration: none;
-                color: white;
-        }
+                color: rgb(255, 255, 255);
+        } */
 
-        .btn-grad {
-                background-color: rgb(140, 140, 241);
-        }
+  .btn-grad {
+    background-color: var(--CTA);
+    padding: 20px 45px;
+    text-align: center;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 800;
+    box-shadow: 0px 20px 25px 1px rgba(0, 0, 0, 0.559);
+    border-radius: 10px;
+    margin: 30px;
+  }
 
-        .btn-grad {
-                margin: 10px;
-                padding: 15px 45px;
-                text-align: center;
-                transition: 0.5s;
-                background-size: 200% auto;
-                color: white;
-                font-weight: 700;
-                box-shadow: 0 0 20px #2b2b2b2f;
-                border-radius: 10px;
-                display: block;
-                border: 1px solid white;
-        }
-
-        .btn-grad:hover {
-                border-radius: 20px;
-        }
+  .btn-grad:hover {
+    border-radius: 50px;
+  }
 </style>
