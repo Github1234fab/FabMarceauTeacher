@@ -29,7 +29,7 @@
   <meta property="og:description" content="Cours de guitare personnalisés pour tous les niveaux, à domicile. Disponible sur Lyon 6 et les Monts du Lyonnais." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://cours-guitare-domicile-lyon.com/" />
-  <meta property="og:image" content="../assets/coursdeguitare.jpg" />
+  <meta property="og:image" content="/static/coursdeguitare.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
