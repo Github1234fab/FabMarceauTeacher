@@ -4,8 +4,8 @@
 
 <section class="CTA">
         <div class="wrapper">
-                <h1>Visez le meilleur, choisissez la <span>passion</span> et <span>l'expérience.</span></h1>
-                <p>Apprendre, se perfectionner, progresser, découvrir. Quoi de mieux que d'être accompagné par un professionnel . C'est l'occasion de bénéficier d'une grande expertise et de poser toutes vos questions, d'aborder tout ce que vous voulez en étant accompagné, dans la bienveillance et la bonne humeur!</p>
+                <h1>Visez le meilleur pour vos cours de guitare à domicile, choisissez la <span>passion</span> et <span>l'expérience.</span></h1>
+                <p>Apprendre la guitare ou se perfectionner encore ? progresser ou découvrir ? Quoi de mieux que d'être accompagné par un professionnel ! C'est l'occasion de bénéficier d'une grande expertise et de poser toutes vos questions, d'aborder tout ce que vous voulez en étant guidés, dans la bienveillance et la bonne humeur!</p>
                 <Button />
         </div>
 </section>

@@ -4,7 +4,7 @@
 
 <section class="social">
         <div class="wrapper-text">
-                <h1>Fabien Marceau<br /><span>Professeur de guitare expérimenté</span></h1>
+                <h1>Fabien Marceau<br /><span>Professeur de guitare expérimenté à Lyon 6</span></h1>
                 <p>J'ai créé l'école de musique ISSÉTYS en 2009. J'ai formé de nombreux professeurs à une pédagogie nouvelle et dépoussiérée. <br> L'école de musique Issétys enseigne la guitare, le piano, la basse, le chant, le ukulélé et la batterie.</p>
         </div>
         <div class="wrapper-media">

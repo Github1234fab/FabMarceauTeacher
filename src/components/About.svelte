@@ -12,7 +12,7 @@
     },
     {
       title: "9",
-      paragraph: "Maîtrise de 9 styles: Rock, Jazz, Blues, Funk, Finger-style, Pop, Bossa Nova, Metal,  Folk.",
+      paragraph: "Maîtrise parfaite de 9 styles: Rock, Jazz, Blues, Funk, Finger-style, Pop, Bossa Nova, Metal,  Folk.",
       icon: "fa-solid fa-guitar",
     },
     {
@@ -30,10 +30,10 @@
       <h1>À propos</h1>
       <p>
         J'ai lu un jour dans une revue pédagogique, qu'enseigner consiste à éveiller les consiences à penser par elle même. Je crois que c'est exactement ce que je cherche à faire dès lors que je donne un cours de Guitare Je vise l'autonomie de l'élève. Expérimenter c'est comprendre et comprendre
-        c'est apprendre. Lorsque l'on sait comment les choses fonctionnent alors, libre à nous de créer, de jouer et d'évoluer comme bon nous semble dans la matière que l'on apprend. <br /><br />J'ai donné plus de 17 000 heures de cours de Guitare à l'école de musique Issétys installée à Lyon 6,
-        école que j'ai créé en 2009. Je dis souvent aux professeurs avec qui je collabore: "regardez l'attitude de votre élève quand il arrive dans la salle et observez son attitude quand il repart". La musique appaise, la musique nous épanouit. Elle requiert une immense concentration car elle se
+        c'est apprendre. Lorsque l'on sait comment les choses fonctionnent alors, libre à nous de créer, de jouer de la guitare comme on le souhaite et évoluer comme bon nous semble. <br /><br />J'ai donné plus de 17 000 heures de cours de Guitare à l'école de musique Issétys installée à Lyon 6,
+        école que j'ai créé en 2009, il y a 17 ans. Je dis souvent aux professeurs de musique avec qui je collabore: "Adaptez vous, n'imposez pas, allez dans le sens de l'élève, vers son épanouissement et aider le à jouer SA musique". La musique appaise, la musique nous épanouit. Elle requiert une immense concentration car elle se
         fabrique avec notre esprit et notre corps, connectés, reliés ensemble à 100%. <br /><br />
-        J'ai été musicien professionnel, j'ai une licence de musicologie, une médaille d'or de guitare jazz , un DEM de musique actuelle, une licence de Science de l'éducation. J'ai beauoucp joué et beaucoup étudié. Mais ça j'allais dire, c'est le minimum syndical ! <br /><br /> Ce qui compte pour enseigner,
+        J'ai été musicien professionnel, j'ai une licence de musicologie, une médaille d'or de guitare jazz , un DEM de musique actuelle, une licence de Science de l'éducation. J'ai beauoucp joué et beaucoup étudié. Mais ça j'allais dire, c'est le minimum syndical ! <br /><br /> Ce qui compte pour enseigner la guitare,
         c'est la passion d'une part, l'envie et le besoin de transmettre d'autre part et pour finir, avoir suffisamment d'empathie et de technique pédagogique pour s'adapter à chaque élève, dans le but de lui permettre d'évoluer dans sa pratique, de devenir autonome.
       </p>
     </div>

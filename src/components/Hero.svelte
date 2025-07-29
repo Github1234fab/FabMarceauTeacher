@@ -7,7 +7,7 @@
   <div class="wrapper-hero">
     <h1>Cours de <span>Guitare</span> à domicile à Lyon</h1>
     <h2>Cours de guitare et coaching, à Lyon 6 et Lyon-Ouest</h2>
-    <h3>Fabien Marceau, professeur de guitare reconnu à Lyon <br> <span> Directeur de l'école de musique Issétys</span></h3>
+    <h3>Fabien Marceau, professeur de guitare, exéprimenté et reconnu à Lyon <br> <span> Directeur de l'école de musique Issétys</span></h3>
     <!-- <p>
       Vous souhaitez apprendre la guitare ou vous perfectionner? <br />Vous êtes débutant, expérimenté ou pro? <br /> Vous souhaitez un programme personnalisé ou un coaching? <br />
       Vous souhaitez apprendre en restant chez vous, sans avoir à vous déplacer? <br />

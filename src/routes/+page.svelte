@@ -9,8 +9,29 @@
   import Resa from "../components/Resa.svelte";
   // import TestForm from "../components/TestForm.svelte";
 
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    console.log('Le composant est monté');
+  });
+
+
+
+ 
+
 
 </script>
+
+<svelte:head>
+  <title>Cours de Guitare à domicile - Lyon 6 & Monts du Lyonnais</title>
+  <meta name="description" content="Profitez de cours de guitare à domicile sur Lyon 6 et les Monts du Lyonnais. Pédagogie personnalisée, tous niveaux, ambiance conviviale." />
+  <meta property="og:title" content="Cours de Guitare à domicile - Lyon, par professeur diplômé et très expérimenté." />
+  <meta property="og:description" content="Cours de guitare personnalisés pour tous les niveaux, à domicile. Disponible sur Lyon 6 et les Monts du Lyonnais." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cours-guitare-domicile-lyon.com/" />
+  <meta property="og:image" content="../assets/coursdeguitare.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+</svelte:head>
 
 
 
