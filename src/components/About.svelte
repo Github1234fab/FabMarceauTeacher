@@ -39,7 +39,7 @@
     </div>
     <div class="wrapper-frames-circle">
       {#each tab as info}
-        <Block icon={info.icon} title={info.title} paragraph={info.paragraph} />
+        <Block title={info.title} icon={info.icon} paragraph={info.paragraph} />
       {/each}
     </div>
   

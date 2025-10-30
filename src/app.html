@@ -14,21 +14,118 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/34232c07fe.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 
-  
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicSchool",
+        "name": "Cours de Guitare à Domicile Lyon",
+        "description": "Cours de guitare à domicile à Lyon par professeur diplômé et très expérimenté. Plus de 17 000 heures d'enseignement. Spécialiste de 9 styles musicaux.",
+        "url": "https://cours-guitare-domicile-lyon.com/",
+        "areaServed": {
+          "@type": "City",
+          "name": "Lyon",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Lyon",
+            "addressRegion": "Auvergne-Rhône-Alpes",
+            "addressCountry": "FR"
+          }
+        },
+        "priceRange": "39.50€ - 79€",
+        "paymentAccepted": "Credit Card, Online Payment",
+        "currenciesAccepted": "EUR",
+        "offers": {
+          "@type": "Offer",
+          "name": "Cours de Guitare à Domicile",
+          "description": "Cours d'une heure à domicile avec crédit d'impôt de 50%",
+          "price": "79.00",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2025-01-01",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "79.00",
+            "priceCurrency": "EUR",
+            "billingDuration": "1 hour"
+          }
+        },
+        "makesOffer": [
+          {
+            "@type": "EducationalOccupationalProgram",
+            "name": "Cours de Guitare Tous Niveaux",
+            "description": "Cours adaptés du débutant au professionnel",
+            "educationalLevel": ["Débutant", "Intermédiaire", "Avancé", "Professionnel"],
+            "timeToComplete": "P1H",
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "EUR"
+            }
+          }
+        ],
+        "serviceType": ["Cours de Guitare Rock", "Cours de Guitare Jazz", "Cours de Guitare Blues", "Cours de Guitare Funk", "Cours de Finger-style", "Cours de Guitare Pop", "Cours de Bossa Nova", "Cours de Guitare Metal", "Cours de Guitare Folk"],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": "1"
+        },
+        "potentialAction": {
+          "@type": "ReserveAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://cours-guitare-domicile-lyon.com/",
+            "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+          },
+          "result": {
+            "@type": "Reservation",
+            "name": "Réservation de cours de guitare"
+          }
+        },
+        "employee": {
+          "@type": "Person",
+          "jobTitle": "Professeur de Guitare",
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Licence de Musicologie"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Médaille d'Or de Guitare Jazz"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "DEM de Musique Actuelle"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Licence de Science de l'Éducation"
+            }
+          ],
+          "knowsAbout": ["Enseignement de la guitare", "Rock", "Jazz", "Blues", "Funk", "Finger-style", "Pop", "Bossa Nova", "Metal", "Folk"]
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Fondateur École Issétys",
+          "foundingDate": "2009"
+        }
+      }
+    </script>
+
     %sveltekit.head%
   </head>
 
   <body data-sveltekit-preload-data="hover">
     <div style="display: contents">%sveltekit.body%</div>
 
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
   </body>
 </html>

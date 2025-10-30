@@ -7,6 +7,7 @@
   import CTA from "../components/CTA.svelte";
   import Formulaire from "../components/Formulaire.svelte";
   import Resa from "../components/Resa.svelte";
+  import FAQ from "../components/Faq.svelte";
   // import TestForm from "../components/TestForm.svelte";
 
   import { onMount } from 'svelte';
@@ -39,7 +40,9 @@
 <About />
 <Products />
 <!-- <TestForm /> -->
+
  <Service />
 <Social />
+<FAQ />
 <Resa />
 <Formulaire /> 

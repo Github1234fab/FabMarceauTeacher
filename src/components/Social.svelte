@@ -5,7 +5,8 @@
 <section class="social">
         <div class="wrapper-text">
                 <h1>Fabien Marceau<br /><span>Professeur de guitare expérimenté à Lyon 6</span></h1>
-                <p>J'ai créé l'école de musique ISSÉTYS en 2009. J'ai formé de nombreux professeurs à une pédagogie nouvelle et dépoussiérée. <br> L'école de musique Issétys enseigne la guitare, le piano, la basse, le chant, le ukulélé et la batterie.</p>
+                <p>J'ai créé l'école de musique ISSÉTYS en 2009. J'ai formé de nombreux professeurs à une pédagogie nouvelle et dépoussiérée. <br> L'école de musique Issétys enseigne la guitare, le piano, la basse, le chant, le ukulélé et la batterie. <br><br>
+                J'enseigne la guitare depuis 30 ans dans tous les styles, je donne des astuces concrètes, des conseils utiles, j'ouvre des pistes de compréhension, je m'adapte à chque profil, chaque objectif et besoin.  Ma méthode est très adaptative basée sur les pédagogies nouvelles - Apprendre en faisant.</p>
         </div>
         <div class="wrapper-media">
                 <div class="wrapper-video">
@@ -16,6 +17,8 @@
                         <h2>Concert des élèves Issétys, 06/2024</h2>
              <img src={Concert} alt="" class="concert" /> 
                 </div> -->
+                <p class="testimonial">"Fabien m'a appris la guitare en partant de zéro. Aujourd'hui je joue en groupe, je compose, je comprends ce que je joue, je sais improviser. Je suis autonome et je suis contente de maîtriser mon instrument." <br><br>
+                Alice P.</p>
         </div>
 </section>
 
@@ -66,6 +69,19 @@
                 color: white;
                 text-align: center;
                 width: 100%;
+                max-width: 800px;
+        }
+        .testimonial{
+                font-size: 2rem;
+                font-weight: 600;
+                font-style: italic;
+                line-height: 25px;
+                color: white;
+                text-align: center;
+                width: 100%;
+                max-width: 800px;
+                margin-top: 30px;
+                padding: 20px;
         }
         .wrapper-media {
                 display: flex;

@@ -46,8 +46,8 @@
 </script>
 
 <section class="products" id="cours_de_guitare">
-        <h1>Mes cours de Guitare à Lyon à domicile</h1>
-        <p>La meilleure manière d'apprendre la guitare ou de se perfectionner, c'est de jouer! <br>Jouer et partager pour comprendre, jouer pour se tromper, jouer pour apprendre et progresser.</p>
+        <h1>Mes cours de Guitare à Lyon et Lyon Ouest, à domicile.</h1>
+        <p>La meilleure manière d'apprendre la guitare ou de se perfectionner, c'est de jouer! <br>Jouer et partager pour comprendre, jouer pour se tromper et corriger, jouer pour apprendre, ressentir et progresser.</p>
         <div class="wrapper-competence-value">
                 <div class="wrapper-values">
                         <i class="fa-solid fa-graduation-cap fa-2xl icon"></i>
@@ -79,6 +79,7 @@
         </div>
         <ButtonCta />
 </section>
+
 
 <style>
         .products {
