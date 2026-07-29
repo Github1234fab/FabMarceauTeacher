@@ -3,8 +3,9 @@
   import Button from "../components/ButtonCTA.svelte";
   import Block from "../components/Block.svelte";
   import ButtonCta from "../components/ButtonCTA.svelte";
+  import { activeCity } from '$lib/stores/seoStore';
 
-  let tab = [
+  $: tab = [
     {
       title: "+ 17 000",
       paragraph: "Plus de 17 000 heures de cours de Guitare données !",
@@ -17,7 +18,9 @@
     },
     {
       title: "2",
-      paragraph: "J'enseigne la Guitare sur deux sites géographiques: Lyon 6 et les monts du Lyonnais.",
+      paragraph: $activeCity
+        ? `J'enseigne la Guitare à domicile ${$activeCity.prepArticle} et ses environs.`
+        : "J'enseigne la Guitare sur deux sites géographiques: Lyon 6 et les monts du Lyonnais.",
       icon: "fa-solid fa-location-dot",
     },
   ];

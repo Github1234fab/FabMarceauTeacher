@@ -1,13 +1,39 @@
 <script>
   import Button from "../components/ButtonCTA.svelte";
   import Strat from "../assets/stratocastorTwo.png";
+  import { activeCity, activeIntention } from '$lib/stores/seoStore';
 </script>
 
 <section class="hero">
   <div class="wrapper-hero">
-    <h1>Cours de <span>Guitare</span> à domicile à Lyon</h1>
-    <h2>Cours de guitare et coaching, à Lyon 6 et Lyon-Ouest</h2>
-    <h3>Fabien Marceau, professeur de guitare, exéprimenté et reconnu à Lyon <br> <span> Directeur de l'école de musique Issétys</span></h3>
+    <h1>
+      {#if $activeIntention}
+        {$activeIntention.name}
+      {:else}
+        Cours de <span>Guitare</span> à domicile
+      {/if}
+      {#if $activeCity}
+        {$activeCity.prepArticle}
+      {:else}
+        à Lyon
+      {/if}
+    </h1>
+    <h2>
+      {#if $activeIntention}
+        {$activeIntention.description}
+      {:else}
+        Cours de guitare et coaching, à Lyon 6 et Lyon-Ouest
+      {/if}
+    </h2>
+    <h3>
+      Fabien Marceau, professeur de guitare, expérimenté et reconnu
+      {#if $activeCity}
+        {$activeCity.prepArticle}
+      {:else}
+        à Lyon
+      {/if}
+      <br> <span> Directeur de l'école de musique Issétys</span>
+    </h3>
     <!-- <p>
       Vous souhaitez apprendre la guitare ou vous perfectionner? <br />Vous êtes débutant, expérimenté ou pro? <br /> Vous souhaitez un programme personnalisé ou un coaching? <br />
       Vous souhaitez apprendre en restant chez vous, sans avoir à vous déplacer? <br />

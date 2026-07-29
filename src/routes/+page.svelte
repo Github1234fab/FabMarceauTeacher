@@ -11,9 +11,11 @@
   // import TestForm from "../components/TestForm.svelte";
 
   import { onMount } from 'svelte';
+  import { activeCity, activeIntention } from '$lib/stores/seoStore';
 
   onMount(() => {
-    console.log('Le composant est monté');
+    activeCity.set(null);
+    activeIntention.set(null);
   });
 
 
