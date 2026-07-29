@@ -36,7 +36,7 @@ export async function GET() {
 		<changefreq>weekly</changefreq>
 		<priority>${url === domain ? '1.0' : '0.8'}</priority>
 	</url>`).join('')}
-</urlset>`;
+</urlset>`.trim();
 
 	return new Response(sitemap, {
 		headers: {
